@@ -3,7 +3,7 @@
     "Schema": {
       "ManagerName": "ProcessSchemaManager",
       "UId": "6e734e49-f8f5-411c-b8f7-d4529ef10114",
-      "A2": "UsrProcess_643f377",
+      "A2": "UsrDummyProcess",
       "A5": "794a43b3-e35f-42fa-b6e8-d153ac7b4ae5",
       "B1": [],
       "B2": [],
@@ -39,6 +39,7 @@
           "A5": "79de5249-64cb-0780-9d66-160ee34922a9",
           "BL7": "11a47caf-a0d5-41fa-a274-a0b11f77447a",
           "BL8": "6e734e49-f8f5-411c-b8f7-d4529ef10114",
+          "BM1": 0,
           "BM4": [
             {
               "BL1": "Terrasoft.Core.Process.ProcessSchemaLane",
@@ -73,7 +74,8 @@
           "BL8": "6e734e49-f8f5-411c-b8f7-d4529ef10114",
           "BN2": "31;31",
           "BO3": true,
-          "FC1": []
+          "FC1": [],
+          "ED1": false
         },
         {
           "BL1": "Terrasoft.Core.Process.ProcessSchemaTerminateEvent",
