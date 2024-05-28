@@ -3,6 +3,9 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="AddonConfig.Rules.5760dce3-8d69-2776-06cd-69d606503dd5.Caption" Value="Apply static filter: Manager" />
+			<Item Name="AddonConfig.Rules.b28b2ec6-cf1e-cdff-b5e4-a6e6a2bfe15e.Caption" Value="ChildRule-cc030c2f-f24b-dfa5-f081-81f155decc60-ClearValue" />
+			<Item Name="AddonConfig.Rules.c8263a89-fb8f-ec94-0853-177bf05c01c9.Caption" Value="ChildRule-cc030c2f-f24b-dfa5-f081-81f155decc60-PopulateValue" />
+			<Item Name="AddonConfig.Rules.cc030c2f-f24b-dfa5-f081-81f155decc60.Caption" Value="Order by country" />
 			<Item Name="Caption" Value="Reality FreedomUI (Business rules)" />
 		</Items>
 	</Group>
