@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "13d8c224-eef0-433e-9605-75b9572038a2",
+    "Name": "UsrRealityFreedomUI_ListPage",
+    "ModifiedOnUtc": "\/Date(1716873523000)\/",
+    "Parent": {
+      "UId": "3f1f3f38-a0a4-4549-b895-249fb08f554a",
+      "Name": "ListFreedomTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Reality FreedomUI list page",
+    "DependsOn": []
+  }
+}

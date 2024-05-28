@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "1d353017-cd26-4bc9-bc41-5052bd425013",
+    "Name": "UsrRealityFreedomUIRelatedPage",
+    "ModifiedOnUtc": "\/Date(1716873523000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Reality FreedomUI (Page settings)",
+    "DependsOn": []
+  }
+}

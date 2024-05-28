@@ -1,0 +1,28 @@
+{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "AddonSchemaManager",
+      "UId": "1d353017-cd26-4bc9-bc41-5052bd425013",
+      "A2": "UsrRealityFreedomUIRelatedPage",
+      "A5": "6f71e54c-1960-40c9-94f6-073fd67699ab",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "5530927f-22ea-e7c9-4ccf-506d3a6c2ed2",
+      "B8": "0.0.0.0",
+      "AD1": "35781431-e4dd-49d7-af9f-1546220a402b",
+      "AD2": "EntitySchemaManager",
+      "AD3": "RelatedPage",
+      "AD5": "3a2d6f51-1bfc-4c17-aacb-b53de4866b7c",
+      "AD4": {
+        "Pages": [
+          {
+            "UId": "12ed6b39-431b-4e59-be2e-0376b233561b",
+            "PageSchemaUId": "b54790ca-4572-4597-8690-6fd63653daa7",
+            "IsDefault": true
+          }
+        ]
+      }
+    }
+  }
+}
