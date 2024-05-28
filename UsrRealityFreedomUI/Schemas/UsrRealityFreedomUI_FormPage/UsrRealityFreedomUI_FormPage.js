@@ -167,28 +167,14 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 					"control": "$LookupAttribute_gc4lcod",
 					"listActions": [],
 					"showValueAsLink": true,
-					"controlActions": []
+					"controlActions": [],
+					"visible": true,
+					"placeholder": "",
+					"tooltip": ""
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
 				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_jgrbpty",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_jgrbpty_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "UsrOfferType",
-				"propertyName": "listActions",
-				"index": 0
 			},
 			{
 				"operation": "insert",
