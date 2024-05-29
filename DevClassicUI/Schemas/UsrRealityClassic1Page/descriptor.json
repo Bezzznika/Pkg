@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "23cd8bd8-2880-4303-98bb-15c5da5f586e",
+    "Name": "UsrRealityClassic1Page",
+    "ModifiedOnUtc": "\/Date(1716987318000)\/",
+    "Parent": {
+      "UId": "d62293c0-7f14-44b1-b547-735fb40499cd",
+      "Name": "BaseModulePageV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Edit page: \"Reality (Classic UI)\""
+  }
+}

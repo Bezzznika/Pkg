@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "31a45267-e9d7-4fe6-a9e3-709572f49eba",
+    "Name": "UsrRealityClassicInFolder",
+    "ModifiedOnUtc": "\/Date(1716987168000)\/",
+    "Parent": {
+      "UId": "4f63bafb-e9e7-4082-b92e-66b97c14017c",
+      "Name": "BaseItemInFolder"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Reality (Classic UI) in Folder",
+    "DependsOn": []
+  }
+}
