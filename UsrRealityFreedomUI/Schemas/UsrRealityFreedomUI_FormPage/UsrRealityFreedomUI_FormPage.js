@@ -1,4 +1,4 @@
-/* jshint esversion: 11  */
+/* jshint esversion: 11 */
 define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
@@ -384,11 +384,11 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 							"path": "PDS.UsrPriceUSD"
 						},
 						"validators": {
-							"MySuperValidator":{
+							"MySuperValidator": {
 								"type": "usr.DGValidator",
 								"params": {
 									"minValue": 50,
-									"message" : "#Resource.String(PriceCannotBeLess)#"
+									"message": "#Resource.String(PriceCannotBeLess)#"
 								}
 							}
 						}
@@ -398,11 +398,11 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 							"path": "PDS.UsrArea"
 						},
 						"validators": {
-							"MySuperValidator":{
+							"MySuperValidatorr": {
 								"type": "usr.DGValidator",
 								"params": {
 									"minValue": 10,
-									"message" : "#Resource.String(AreaCannotBeLess)#"
+									"message": "#Resource.String(AreaCannotBeLess)#"
 								}
 							}
 						}
@@ -516,19 +516,20 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{
-			"usr.vDGValidator":{
-				validator: function(config){
-					return function(control){
+			/* The validator type must contain a vendor prefix.
+			Format the validator type in PascalCase. */
+			"usr.DGValidator": {
+				validator: function (config) {
+					return function (control) {
 						let value = control.value;
 						let minValue = config.minValue;
-						let valueIsCorrect = value=>minValue;
+						let valueIsCorrect = value >= minValue;
 						var result;
-						if(valueIsCorrect){
+						if (valueIsCorrect) {
 							result = null;
-						}
-						else{
+						} else {
 							result = {
-								"usr.DGValidator":{
+								"usr.DGValidator": { 
 									message: config.message
 								}
 							};
