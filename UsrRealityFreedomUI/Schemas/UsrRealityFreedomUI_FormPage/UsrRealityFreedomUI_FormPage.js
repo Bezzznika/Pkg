@@ -1,3 +1,4 @@
+/* jshint esversion: 11  */
 define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
@@ -476,7 +477,7 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 			{
 				request: "crt.HandleViewModelAttributeChangeRequest",
 				handler: async (request, next) => {
-					if(request.attributeName === NumberAttribute_smqjxyk || request.attributeName === UsrOfferTypeUsrCommissionPercent){
+					if(request.attributeName === 'NumberAttribute_smqjxyk' || request.attributeName === 'UsrOfferTypeUsrCommissionPercent'){
 						var price = await request.$context.NumberAttribute_smqjxyk;
 						var percent = await request.$context.UsrOfferTypeUsrCommissionPercent;
 						var commission = price*percent/100;
