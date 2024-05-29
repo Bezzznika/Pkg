@@ -388,7 +388,7 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 								"type": "usr.DGValidator",
 								"params": {
 									"minValue": 50,
-									"message": "#Resource.String(PriceCannotBeLess)#"
+									"message": "#ResourceString(PriceCannotBeLess)#"
 								}
 							}
 						}
@@ -402,7 +402,7 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 								"type": "usr.DGValidator",
 								"params": {
 									"minValue": 10,
-									"message": "#Resource.String(AreaCannotBeLess)#"
+									"message": "#ResourceString(AreaCannotBeLess)#"
 								}
 							}
 						}
