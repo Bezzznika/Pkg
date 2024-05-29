@@ -81,7 +81,7 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 					"iconPosition": "left-icon",
 					"visible": true,
 					"clicked": {
-						"request": "crt.CancelRecordChangesRequest"
+						"request": "crt.MyButtonRequest"
 					},
 					"clickMode": "default",
 					"icon": "database-icon"
@@ -382,11 +382,29 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 					"NumberAttribute_smqjxyk": {
 						"modelConfig": {
 							"path": "PDS.UsrPriceUSD"
+						},
+						"validators": {
+							"MySuperValidator":{
+								"type": "usr.DGValidator",
+								"params": {
+									"minValue": 50,
+									"message" : "#Resource.String(PriceCannotBeLess)#"
+								}
+							}
 						}
 					},
 					"NumberAttribute_rf2jt7m": {
 						"modelConfig": {
 							"path": "PDS.UsrArea"
+						},
+						"validators": {
+							"MySuperValidator":{
+								"type": "usr.DGValidator",
+								"params": {
+									"minValue": 10,
+									"message" : "#Resource.String(AreaCannotBeLess)#"
+								}
+							}
 						}
 					},
 					"LookupAttribute_ymfvzsg": {
@@ -485,9 +503,49 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 					}
 					return next?.handle(request);
 				}
+			},{
+				request: "crt.MyButtonRequest",
+				handler: async (request, next) =>{
+					this.console.log("Button works...");
+					Terrasoft.showInformation("My button was pressed");
+					var price = await request.$context.NumberAttribute_smqjxyk;
+					this.console.log("Price = "+ price);
+					return next?.handle(request);
+				}
 			}
 		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
-		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
+		validators: /**SCHEMA_VALIDATORS*/{
+			"usr.vDGValidator":{
+				validator: function(config){
+					return function(control){
+						let value = control.value;
+						let minValue = config.minValue;
+						let valueIsCorrect = value=>minValue;
+						var result;
+						if(valueIsCorrect){
+							result = null;
+						}
+						else{
+							result = {
+								"usr.DGValidator":{
+									message: config.message
+								}
+							};
+						}
+						return result;
+					};
+				},
+				params: [
+					{
+						name: "minValue"
+					},
+					{
+						name: "message"
+					}
+				],
+				async: false
+			}
+		}/**SCHEMA_VALIDATORS*/
 	};
 });
