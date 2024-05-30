@@ -4,6 +4,7 @@
 		<Items>
 			<Item Name="Caption" Value="Reality FreedomUI" />
 			<Item Name="Columns.UsrName.Caption" Value="Название" />
+			<Item Name="Columns.UsrType.Caption" Value="тип" />
 		</Items>
 	</Group>
 </Resources>

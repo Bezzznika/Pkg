@@ -72,25 +72,6 @@ define("UsrRealityClassic1Page", [], function() {
 			},
 			{
 				"operation": "insert",
-				"name": "LOOKUP6ad68e0d-949b-49b3-9af0-2930451eb8b5",
-				"values": {
-					"layout": {
-						"colSpan": 12,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 0,
-						"layoutName": "Header"
-					},
-					"bindTo": "UsrType",
-					"enabled": true,
-					"contentType": 3
-				},
-				"parentName": "Header",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
 				"name": "LOOKUP9c4bbeaa-36ea-4f2c-a30c-3b6ef27931ac",
 				"values": {
 					"layout": {
@@ -101,6 +82,25 @@ define("UsrRealityClassic1Page", [], function() {
 						"layoutName": "Header"
 					},
 					"bindTo": "UsrOfferType",
+					"enabled": true,
+					"contentType": 5
+				},
+				"parentName": "Header",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "LOOKUP2626904d-1bb5-445a-a7d0-cff7cf2d6129",
+				"values": {
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 0,
+						"layoutName": "Header"
+					},
+					"bindTo": "UsrTypeClassic",
 					"enabled": true,
 					"contentType": 5
 				},

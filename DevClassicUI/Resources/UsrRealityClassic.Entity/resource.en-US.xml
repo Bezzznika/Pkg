@@ -9,6 +9,7 @@
 			<Item Name="Columns.UsrOfferType.Caption" Value="Offer Type" />
 			<Item Name="Columns.UsrPriceUSD.Caption" Value="Price, USD" />
 			<Item Name="Columns.UsrType.Caption" Value="Type" />
+			<Item Name="Columns.UsrTypeClassic.Caption" Value="Type" />
 		</Items>
 	</Group>
 </Resources>
