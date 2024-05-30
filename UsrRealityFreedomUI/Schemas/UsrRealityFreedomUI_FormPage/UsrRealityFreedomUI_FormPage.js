@@ -85,6 +85,46 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 			},
 			{
 				"operation": "insert",
+				"name": "Button_tuvhf1s",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_tuvhf1s_caption)#",
+					"color": "primary",
+					"disabled": false,
+					"size": "medium",
+					"iconPosition": "left-icon",
+					"visible": true,
+					"icon": "actions-button-icon",
+					"menuItems": [],
+					"clickMode": "menu"
+				},
+				"parentName": "CardToggleContainer",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "MenuItem_rvdn6ng",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(MenuItem_rvdn6ng_caption)#",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "UsrCaclAvgPriceProcess",
+							"processRunType": "ForTheSelectedPage",
+							"recordIdProcessParameterName": "RealityIdParameter"
+						}
+					},
+					"icon": "calculator-button-icon"
+				},
+				"parentName": "Button_tuvhf1s",
+				"propertyName": "menuItems",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "PushMeButton",
 				"values": {
 					"type": "crt.Button",
@@ -102,7 +142,7 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 				},
 				"parentName": "CardToggleContainer",
 				"propertyName": "items",
-				"index": 0
+				"index": 1
 			},
 			{
 				"operation": "insert",

@@ -11,6 +11,7 @@
 			<Item Name="LocalizableStrings.AreaCannotBeLess.Value" Value="Area Cannot Be Less than 10" />
 			<Item Name="LocalizableStrings.Button_3q6k7su_caption.Value" Value="Button" />
 			<Item Name="LocalizableStrings.Button_cpnqi9n_caption.Value" Value="PUSH ME!" />
+			<Item Name="LocalizableStrings.Button_tuvhf1s_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.ExpansionPanel_lsd4mzi_title.Value" Value="Reality Visit (Freedom UI)" />
 			<Item Name="LocalizableStrings.GridDetailAddBtn_d1rttbu_caption.Value" Value="New" />
 			<Item Name="LocalizableStrings.GridDetailExportDataBtn_uokwk6t_caption.Value" Value="Export to Excel" />
@@ -18,6 +19,7 @@
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_yeph5sh_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_whmrfo7_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_tthdq1o_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.MenuItem_rvdn6ng_caption.Value" Value="Calculate average price" />
 			<Item Name="LocalizableStrings.NumberInput_awhuqf4_label.Value" Value="Number" />
 			<Item Name="LocalizableStrings.PriceCannotBeLess.Value" Value="Price cannot be less than 50" />
 		</Items>
