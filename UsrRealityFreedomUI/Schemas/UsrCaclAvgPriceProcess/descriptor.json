@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "a2a07620-1506-4cb0-9e39-59e7eb126e69",
+    "Name": "UsrCaclAvgPriceProcess",
+    "ModifiedOnUtc": "\/Date(1717060684000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Calculate average reality price",
+    "DependsOn": []
+  }
+}
