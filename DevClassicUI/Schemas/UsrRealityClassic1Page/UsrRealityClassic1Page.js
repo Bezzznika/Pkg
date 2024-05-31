@@ -1,4 +1,4 @@
-define("UsrRealityClassic1Page", [], function() {
+define("UsrRealityClassic1Page", ["ServiceHelper"], function(ServiceHelper) {
 	return {
 		entitySchemaName: "UsrRealityClassic",
 		attributes: {},
@@ -14,7 +14,36 @@ define("UsrRealityClassic1Page", [], function() {
 			}
 		}/**SCHEMA_DETAILS*/,
 		businessRules: /**SCHEMA_BUSINESS_RULES*/{}/**SCHEMA_BUSINESS_RULES*/,
-		methods: {},
+		methods: {
+			onMyButtonClick: function() {
+				//
+				this.console.log("My button works!");
+			},
+			onRunWebServiceButtonClick: function() {
+				var typeObject = this.get("UsrType");
+				if (!typeObject) {
+					return;
+				}
+				var typeId = typeObject.value;
+				var offerTypeObject = this.get("UsrOfferType");
+				if (!offerTypeObject) {
+					return;
+				}
+				var offerTypeId = offerTypeObject.value;
+				var params = {
+					realtyTypeId: typeId,
+					realtyOfferTypeId: offerTypeId,
+					entityName: "UsrRealityClassic"
+				};				
+				this.console.log("1");
+				ServiceHelper.callService("RealityService", "GetTotalAmountByTypeId", this.getWebServiceResult, params, this);
+				this.console.log("2");
+			},
+			getWebServiceResult: function(response, success) {
+				this.console.log("3");
+				this.Terrasoft.showInformation("Total amount by typeId: " + response.GetTotalAmountByTypeIdResult);
+			}
+		},
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[
 			{
@@ -70,6 +99,34 @@ define("UsrRealityClassic1Page", [], function() {
 				"propertyName": "items",
 				"index": 2
 			},
+			{
+                /*  Run the operation that inserts the element to the page. */
+                "operation": "insert",
+                /* The meta name of the parent container to add the button. */
+                "parentName": "ProfileContainer",
+                /* Add the button to the element collection of the parent element. */
+                "propertyName": "items",
+                /* The meta name of the added button. */
+                "name": "RunWebServiceButton",
+                /* The properties to pass to the element’s constructor. */
+                "values": {
+					"layout": {
+						"colSpan": 10,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 3,
+						"layoutName": "ProfileContainer"
+					},
+                    /* Set the type of the added element to ‘button.’ */
+                    "itemType": Terrasoft.ViewItemType.BUTTON,
+                    /* Bind the button title to the localizable schema string. */
+                    "caption": {bindTo: "Resources.Strings.MyButtonCaption"},
+                    /* Bind the button click handler method. */
+                    "click": {bindTo: "onRunWebServiceButtonClick"},
+                    /* The display style of the button. */
+                    "style": Terrasoft.controls.ButtonEnums.style.BLUE
+                }
+            },
 			{
 				"operation": "insert",
 				"name": "LOOKUP9c4bbeaa-36ea-4f2c-a30c-3b6ef27931ac",
