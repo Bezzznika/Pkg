@@ -4,6 +4,7 @@
     "Name": "UsrAutoAddRealityVisitsProcess",
     "ModifiedOnUtc": "\/Date(1717068636000)\/",
     "ManagerName": "ProcessSchemaManager",
-    "Caption": "Auto add reality visits"
+    "Caption": "Auto add reality visits",
+    "DependsOn": []
   }
 }
