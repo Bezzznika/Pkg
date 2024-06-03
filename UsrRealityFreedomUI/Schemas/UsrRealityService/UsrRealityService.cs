@@ -15,19 +15,19 @@
         [WebInvoke(Method = "POST", BodyStyle = WebMessageBodyStyle.Wrapped,
             RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
 
-        public decimal GetTotalAmountByTypeId(string realityTypeId, string realityOfferTypeId,
+        public decimal GetTotalAmountByTypeId(string realtyTypeId, string realtyOfferTypeId,
             string entityName)
         {
-            if (string.IsNullOrEmpty(realityTypeId) || string.IsNullOrEmpty(realityOfferTypeId)
+            if ( string.IsNullOrEmpty(realtyTypeId) || string.IsNullOrEmpty(realtyOfferTypeId)
                 || string.IsNullOrEmpty(entityName))
             {
-                return -1;
+                return -2;
             }
             Select select = new Select(UserConnection)
                 .Column(Func.Sum("UsrPriceUSD"))
                 .From(entityName)
-                .Where("UsrType").IsEqual(Column.Parameter(new Guid(realityTypeId)))
-                .And("UsrOfferType").IsEqual(Column.Parameter(new Guid(realityOfferTypeId)))
+                .Where("UsrTypeId").IsEqual(Column.Parameter(new Guid(realtyTypeId)))
+                .And("UsrOfferTypeId").IsEqual(Column.Parameter(new Guid(realtyOfferTypeId)))
                 as Select;
             decimal result = select.ExecuteScalar<decimal>();
             return result;

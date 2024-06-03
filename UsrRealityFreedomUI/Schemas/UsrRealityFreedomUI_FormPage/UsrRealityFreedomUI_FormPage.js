@@ -1,4 +1,3 @@
-/* jshint esversion: 11 */
 define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(sdk)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
@@ -138,6 +137,26 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"
 				"parentName": "Button_tuvhf1s",
 				"propertyName": "menuItems",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "MenuItem_swy8w70",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(MenuItem_swy8w70_caption)#",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "UsrGetGoldRatesMAINProcess",
+							"processRunType": "RegardlessOfThePage"
+						}
+					},
+					"icon": "tag-icon"
+				},
+				"parentName": "Button_tuvhf1s",
+				"propertyName": "menuItems",
+				"index": 2
 			},
 			{
 				"operation": "insert",
