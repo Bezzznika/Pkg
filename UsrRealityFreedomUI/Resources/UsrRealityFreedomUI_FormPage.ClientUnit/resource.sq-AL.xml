@@ -2,8 +2,9 @@
 <Resources Culture="sq-AL">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Reality Visit (Freedom UI) modal page" />
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Anulo" />
+			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Mbyll" />
+			<Item Name="LocalizableStrings.FeedTabContainerHeaderLabel_caption.Value" Value="Faqe" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Ruaj" />
 		</Items>
 	</Group>

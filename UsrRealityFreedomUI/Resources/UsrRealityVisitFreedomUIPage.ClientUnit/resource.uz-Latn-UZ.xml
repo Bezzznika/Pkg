@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="uz-Latn-UZ">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Reality Visit (Freedom UI) modal page" />
+			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Bekor qilish" />
+			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Saqlash" />
+		</Items>
+	</Group>
+</Resources>

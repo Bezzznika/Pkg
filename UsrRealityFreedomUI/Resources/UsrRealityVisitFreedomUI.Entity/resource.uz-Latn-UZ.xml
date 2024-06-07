@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="uz-Latn-UZ">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Reality Visit (Freedom UI)" />
+			<Item Name="Columns.UsrComment.Caption" Value="Izoh" />
+			<Item Name="Columns.UsrPotentialCustomer.Caption" Value="Ehtimoliy mijoz" />
+			<Item Name="Columns.UsrVisitDateTime.Caption" Value="Tashriflar vaqti va sa'nasi" />
+		</Items>
+	</Group>
+</Resources>

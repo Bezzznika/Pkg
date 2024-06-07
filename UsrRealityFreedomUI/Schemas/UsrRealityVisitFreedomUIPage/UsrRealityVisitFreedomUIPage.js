@@ -2,6 +2,24 @@ define("UsrRealityVisitFreedomUIPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
+				"operation": "merge",
+				"name": "CancelButton",
+				"values": {
+					"caption": "#ResourceString(CancelButton_caption)#",
+					"color": "default",
+					"size": "large",
+					"iconPosition": "only-text",
+					"clickMode": "default"
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "SaveButton",
+				"values": {
+					"caption": "#ResourceString(SaveButton_caption)#"
+				}
+			},
+			{
 				"operation": "insert",
 				"name": "DateTimePicker_s1pfgzz",
 				"values": {

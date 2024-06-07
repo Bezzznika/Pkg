@@ -3,6 +3,10 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Reality FreedomUI form page" />
+			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Cancelar" />
+			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Fechar" />
+			<Item Name="LocalizableStrings.FeedTabContainerHeaderLabel_caption.Value" Value="Feed" />
+			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Salvar" />
 		</Items>
 	</Group>
 </Resources>

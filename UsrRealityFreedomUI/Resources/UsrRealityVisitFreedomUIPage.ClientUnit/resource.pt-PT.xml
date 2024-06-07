@@ -3,6 +3,8 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Reality Visit (Freedom UI) modal page" />
+			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Cancelar" />
+			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Gravar" />
 		</Items>
 	</Group>
 </Resources>

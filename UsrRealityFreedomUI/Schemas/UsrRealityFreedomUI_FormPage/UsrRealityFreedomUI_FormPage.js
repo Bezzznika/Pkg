@@ -3,11 +3,33 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
 				"operation": "merge",
+				"name": "SaveButton",
+				"values": {
+					"caption": "#ResourceString(SaveButton_caption)#",
+					"size": "large",
+					"iconPosition": "only-text",
+					"clickMode": "default"
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "CancelButton",
 				"values": {
+					"caption": "#ResourceString(CancelButton_caption)#",
 					"color": "default",
 					"size": "large",
-					"iconPosition": "only-text"
+					"iconPosition": "only-text",
+					"clickMode": "default"
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "CloseButton",
+				"values": {
+					"caption": "#ResourceString(CloseButton_caption)#",
+					"size": "large",
+					"iconPosition": "only-text",
+					"clickMode": "default"
 				}
 			},
 			{
@@ -27,6 +49,20 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"
 			},
 			{
 				"operation": "merge",
+				"name": "SideAreaProfileContainer",
+				"values": {
+					"columns": [
+						"minmax(64px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"visible": true
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "Tabs",
 				"values": {
 					"styleType": "default",
@@ -42,7 +78,8 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"
 				"operation": "merge",
 				"name": "GeneralInfoTab",
 				"values": {
-					"iconPosition": "only-text"
+					"iconPosition": "only-text",
+					"visible": true
 				}
 			},
 			{
@@ -82,6 +119,14 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"
 				"values": {
 					"dataSourceName": "PDS",
 					"entitySchemaName": "UsrRealityFreedomUI"
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "FeedTabContainerHeaderLabel",
+				"values": {
+					"caption": "#MacrosTemplateString(#ResourceString(FeedTabContainerHeaderLabel_caption)#)#",
+					"visible": true
 				}
 			},
 			{
@@ -210,7 +255,10 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"
 					"label": "$Resources.Strings.UsrName",
 					"control": "$UsrName",
 					"labelPosition": "auto",
-					"multiline": false
+					"multiline": false,
+					"visible": true,
+					"placeholder": "",
+					"tooltip": ""
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
@@ -229,7 +277,10 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"
 					"type": "crt.NumberInput",
 					"label": "$Resources.Strings.NumberAttribute_smqjxyk",
 					"labelPosition": "auto",
-					"control": "$NumberAttribute_smqjxyk"
+					"control": "$NumberAttribute_smqjxyk",
+					"visible": true,
+					"placeholder": "#ResourceString(UsrPriceUSD_placeholder)#",
+					"tooltip": ""
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
@@ -248,7 +299,10 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"
 					"type": "crt.NumberInput",
 					"label": "$Resources.Strings.NumberAttribute_rf2jt7m",
 					"labelPosition": "auto",
-					"control": "$NumberAttribute_rf2jt7m"
+					"control": "$NumberAttribute_rf2jt7m",
+					"visible": true,
+					"placeholder": "#ResourceString(UsrArea_placeholder)#",
+					"tooltip": ""
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
@@ -265,12 +319,13 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"
 						"rowSpan": 1
 					},
 					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.UsrOfferTypeUsrCommissionPercent",
+					"label": "#ResourceString(UsrCommissionPercent_label)#",
 					"control": "$UsrOfferTypeUsrCommissionPercent",
 					"readonly": true,
-					"placeholder": "",
+					"placeholder": "#ResourceString(UsrCommissionPercent_placeholder)#",
 					"labelPosition": "auto",
-					"tooltip": ""
+					"tooltip": "#ResourceString(UsrCommissionPercent_tooltip)#",
+					"visible": true
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
@@ -492,7 +547,8 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"
 						"left": "none",
 						"right": "none"
 					},
-					"fitContent": true
+					"fitContent": true,
+					"visible": true
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",

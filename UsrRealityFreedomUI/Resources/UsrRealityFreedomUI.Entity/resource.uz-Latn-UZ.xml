@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="uz-Latn-UZ">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Reality FreedomUI" />
+			<Item Name="Columns.UsrArea.Caption" Value="Maydon, fut kvadratda" />
+			<Item Name="Columns.UsrCommissionUSD.Caption" Value="Kommissiya, USD" />
+			<Item Name="Columns.UsrName.Caption" Value="Nomi" />
+			<Item Name="Columns.UsrPriceUSD.Caption" Value="Narxi, USD" />
+		</Items>
+	</Group>
+</Resources>

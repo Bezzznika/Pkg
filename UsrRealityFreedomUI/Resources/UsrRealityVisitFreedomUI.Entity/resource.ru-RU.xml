@@ -3,6 +3,9 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Объект" />
+			<Item Name="Columns.UsrComment.Caption" Value="Комментарий" />
+			<Item Name="Columns.UsrPotentialCustomer.Caption" Value="Потенциальный клиент" />
+			<Item Name="Columns.UsrVisitDateTime.Caption" Value="Дата и время посещения" />
 		</Items>
 	</Group>
 </Resources>

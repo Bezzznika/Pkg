@@ -4,10 +4,21 @@
 		<Items>
 			<Item Name="Caption" Value="Страница записи Reality FreedomUI" />
 			<Item Name="LocalizableStrings.Button_tuvhf1s_caption.Value" Value="Действия" />
+			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Отмена" />
+			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Закрыть" />
+			<Item Name="LocalizableStrings.ExpansionPanel_lsd4mzi_title.Value" Value="История посещений" />
+			<Item Name="LocalizableStrings.FeedTabContainerHeaderLabel_caption.Value" Value="Лента" />
 			<Item Name="LocalizableStrings.MenuItem_rvdn6ng_caption.Value" Value="Вычислить среднюю стоимость" />
 			<Item Name="LocalizableStrings.MenuItem_swy8w70_caption.Value" Value="Обновить курс золота" />
 			<Item Name="LocalizableStrings.PushMeButton_caption.Value" Value="Нажми на меня" />
 			<Item Name="LocalizableStrings.RunWebServiceMenuItem_caption.Value" Value="Вычислить общую сумму" />
+			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Сохранить" />
+			<Item Name="LocalizableStrings.UsrArea_placeholder.Value" Value="Минимум 10" />
+			<Item Name="LocalizableStrings.UsrCommissionPercent_label.Value" Value="Процентная ставка, %" />
+			<Item Name="LocalizableStrings.UsrCommissionPercent_placeholder.Value" Value="От 0 до 100%" />
+			<Item Name="LocalizableStrings.UsrCommissionPercent_tooltip.Value" Value="Только для просмотра" />
+			<Item Name="LocalizableStrings.UsrName_placeholder.Value" Value="------" />
+			<Item Name="LocalizableStrings.UsrPriceUSD_placeholder.Value" Value="Минимум 50$" />
 		</Items>
 	</Group>
 </Resources>
