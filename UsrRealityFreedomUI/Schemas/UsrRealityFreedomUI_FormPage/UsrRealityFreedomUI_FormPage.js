@@ -3,6 +3,15 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
 				"operation": "merge",
+				"name": "CancelButton",
+				"values": {
+					"color": "default",
+					"size": "large",
+					"iconPosition": "only-text"
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "CardContentWrapper",
 				"values": {
 					"padding": {
@@ -27,6 +36,13 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"
 					"tabTitleColor": "auto",
 					"underlineSelectedTabColor": "auto",
 					"headerBackgroundColor": "auto"
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "GeneralInfoTab",
+				"values": {
+					"iconPosition": "only-text"
 				}
 			},
 			{
@@ -128,11 +144,12 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"
 				"name": "RunWebServiceMenuItem",
 				"values": {
 					"type": "crt.MenuItem",
-					"caption": "#ResourceString(MenuItem_97ic5mv_caption)#",
+					"caption": "#ResourceString(RunWebServiceMenuItem_caption)#",
 					"visible": true,
 					"clicked": {
 						"request": "usr.RunWebServiceButtonRequest"
-					}
+					},
+					"icon": "disk-warn-button-icon"
 				},
 				"parentName": "Button_tuvhf1s",
 				"propertyName": "menuItems",
@@ -163,7 +180,7 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"
 				"name": "PushMeButton",
 				"values": {
 					"type": "crt.Button",
-					"caption": "#ResourceString(Button_cpnqi9n_caption)#",
+					"caption": "#ResourceString(PushMeButton_caption)#",
 					"color": "accent",
 					"disabled": false,
 					"size": "medium",
@@ -858,7 +875,15 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"
 					"GridDetail_fn3urdp": {
 						"isCollection": true,
 						"modelConfig": {
-							"path": "GridDetail_fn3urdpDS"
+							"path": "GridDetail_fn3urdpDS",
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "asc",
+										"columnName": "UsrPotentialCustomer"
+									}
+								]
+							}
 						},
 						"viewModelConfig": {
 							"attributes": {
@@ -1003,7 +1028,7 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"
 					};
 					const response = await httpClientService.post(endpoint, params);
 					
-					this.console.log("response total price = " + response.body.GetTotalAmountByTypeIdResult);
+					Terrasoft.showInformation("Total price of all items = " + response.body.GetTotalAmountByTypeIdResult);
 					
 					/* Call the next handler if it exists and return its result. */
 					return next?.handle(request);
@@ -1024,9 +1049,9 @@ define("UsrRealityFreedomUI_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"
 				request: "crt.MyButtonRequest",
 				handler: async (request, next) =>{
 					this.console.log("Button works...");
-					Terrasoft.showInformation("My button was pressed");
 					var price = await request.$context.NumberAttribute_smqjxyk;
 					this.console.log("Price = "+ price);
+					Terrasoft.showInformation("Price = "+ price);
 					return next?.handle(request);
 				}
 			}

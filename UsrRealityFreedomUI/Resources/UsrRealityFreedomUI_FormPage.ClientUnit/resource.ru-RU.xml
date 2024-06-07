@@ -3,6 +3,11 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Страница записи Reality FreedomUI" />
+			<Item Name="LocalizableStrings.Button_tuvhf1s_caption.Value" Value="Действия" />
+			<Item Name="LocalizableStrings.MenuItem_rvdn6ng_caption.Value" Value="Вычислить среднюю стоимость" />
+			<Item Name="LocalizableStrings.MenuItem_swy8w70_caption.Value" Value="Обновить курс золота" />
+			<Item Name="LocalizableStrings.PushMeButton_caption.Value" Value="Нажми на меня" />
+			<Item Name="LocalizableStrings.RunWebServiceMenuItem_caption.Value" Value="Вычислить общую сумму" />
 		</Items>
 	</Group>
 </Resources>

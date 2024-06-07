@@ -24,6 +24,8 @@
 			<Item Name="LocalizableStrings.MenuItem_swy8w70_caption.Value" Value="Get gold rates" />
 			<Item Name="LocalizableStrings.NumberInput_awhuqf4_label.Value" Value="Number" />
 			<Item Name="LocalizableStrings.PriceCannotBeLess.Value" Value="Price cannot be less than 50" />
+			<Item Name="LocalizableStrings.PushMeButton_caption.Value" Value="PUSH ME!" />
+			<Item Name="LocalizableStrings.RunWebServiceMenuItem_caption.Value" Value="Calculate total price" />
 		</Items>
 	</Group>
 </Resources>

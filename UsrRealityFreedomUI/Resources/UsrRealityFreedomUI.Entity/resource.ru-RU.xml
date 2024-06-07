@@ -3,8 +3,16 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Reality FreedomUI" />
+			<Item Name="Columns.UsrArea.Caption" Value="Площадь, кв фут" />
+			<Item Name="Columns.UsrCity.Caption" Value="Город" />
+			<Item Name="Columns.UsrComment.Caption" Value="Комментарии" />
+			<Item Name="Columns.UsrCommissionUSD.Caption" Value="Коммиссия, USD" />
+			<Item Name="Columns.UsrCountry.Caption" Value="Страна" />
+			<Item Name="Columns.UsrManager.Caption" Value="Ответственный" />
 			<Item Name="Columns.UsrName.Caption" Value="Название" />
-			<Item Name="Columns.UsrType.Caption" Value="тип" />
+			<Item Name="Columns.UsrOfferType.Caption" Value="Тип предложения" />
+			<Item Name="Columns.UsrPriceUSD.Caption" Value="Стоимость, USD" />
+			<Item Name="Columns.UsrType.Caption" Value="Вид" />
 		</Items>
 	</Group>
 </Resources>
