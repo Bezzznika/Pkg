@@ -3,6 +3,8 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Library list page" />
+			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="Nouveau" />
+			<Item Name="LocalizableStrings.DataImportButton_caption.Value" Value="Import" />
 			<Item Name="LocalizableStrings.RefreshButtonCaption.Value" Value="Refresh" />
 		</Items>
 	</Group>

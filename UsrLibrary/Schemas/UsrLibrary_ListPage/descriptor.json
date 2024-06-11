@@ -2,13 +2,12 @@
   "Descriptor": {
     "UId": "abffd6fc-73b7-4a7a-8c6c-2dbe3a19cf66",
     "Name": "UsrLibrary_ListPage",
-    "ModifiedOnUtc": "\/Date(1718103610000)\/",
+    "ModifiedOnUtc": "\/Date(1718110779000)\/",
     "Parent": {
       "UId": "3f1f3f38-a0a4-4549-b895-249fb08f554a",
       "Name": "ListFreedomTemplate"
     },
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Library list page",
-    "DependsOn": []
+    "Caption": "Library list page"
   }
 }

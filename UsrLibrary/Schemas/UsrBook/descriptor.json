@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "8f3610d3-14ba-42ad-a533-80f428b013cd",
+    "Name": "UsrBook",
+    "ModifiedOnUtc": "\/Date(1718110474000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Object",
+    "DependsOn": []
+  }
+}

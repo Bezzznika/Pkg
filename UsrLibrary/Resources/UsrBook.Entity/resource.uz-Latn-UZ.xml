@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="uz-Latn-UZ">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Book catalogue" />
+			<Item Name="Columns.UsrBookAuthor.Caption" Value="Author" />
+			<Item Name="Columns.UsrBookAvailableCopies.Caption" Value="AvailableCopies" />
+			<Item Name="Columns.UsrBookFormat.Caption" Value="Format of book" />
+			<Item Name="Columns.UsrBookGenre.Caption" Value="Genre of book" />
+			<Item Name="Columns.UsrBookLocation.Caption" Value="Location" />
+			<Item Name="Columns.UsrBookPublicationDate.Caption" Value="Publication Date" />
+			<Item Name="Columns.UsrBookQuantity.Caption" Value="Quantity" />
+			<Item Name="Columns.UsrBookTitle.Caption" Value="Title" />
+		</Items>
+	</Group>
+</Resources>

@@ -3,6 +3,8 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Страница с реестром Library" />
+			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="Добавить" />
+			<Item Name="LocalizableStrings.DataImportButton_caption.Value" Value="Импорт" />
 			<Item Name="LocalizableStrings.LookupQuickFilterByTag_config_caption.Value" Value="Фильтр по тегам" />
 			<Item Name="LocalizableStrings.LookupQuickFilterByTag_config_hint.Value" Value="Выберите тег для фильтрации" />
 			<Item Name="LocalizableStrings.RefreshButtonCaption.Value" Value="Обновить" />

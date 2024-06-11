@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="uz-Latn-UZ">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Library Author" />
+			<Item Name="Columns.UsrAuthorBirthDate.Caption" Value="Birth Date" />
+			<Item Name="Columns.UsrAuthorName.Caption" Value="Name" />
+			<Item Name="Columns.UsrAuthorNationality.Caption" Value="Nationality" />
+		</Items>
+	</Group>
+</Resources>

@@ -3,6 +3,24 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
 				"operation": "merge",
+				"name": "AddButton",
+				"values": {
+					"caption": "#ResourceString(AddButton_caption)#",
+					"size": "large",
+					"visible": true,
+					"clickMode": "default",
+					"menuItems": []
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "DataImportButton",
+				"values": {
+					"caption": "#ResourceString(DataImportButton_caption)#"
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "SectionContentWrapper",
 				"values": {
 					"direction": "row",
@@ -24,22 +42,48 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				"values": {
 					"columns": [
 						{
-							"id": "f252f581-0ccf-44ac-b7c9-c00df2ad9919",
-							"code": "PDS_UsrName",
-							"caption": "#ResourceString(PDS_UsrName)#",
-							"dataValueType": 1
+							"id": "1621337f-e2d8-09d2-707f-13dbc5c6f7dd",
+							"code": "PDS_UsrBookTitle",
+							"path": "UsrBookTitle",
+							"caption": "#ResourceString(PDS_UsrBookTitle)#",
+							"dataValueType": 28
 						},
 						{
-							"id": "c8689d78-80ba-4e71-8cf2-fa478e3be5bc",
-							"code": "PDS_CreatedOn",
-							"caption": "#ResourceString(PDS_CreatedOn)#",
-							"dataValueType": 7
+							"id": "e3e3ee8b-8385-a3dc-3f81-65faf6185d16",
+							"code": "PDS_UsrBookLocation",
+							"path": "UsrBookLocation",
+							"caption": "#ResourceString(PDS_UsrBookLocation)#",
+							"dataValueType": 28
 						},
 						{
-							"id": "fd4b3485-a46e-4219-b775-adef1210fe51",
-							"code": "PDS_CreatedBy",
-							"caption": "#ResourceString(PDS_CreatedBy)#",
-							"dataValueType": 10
+							"id": "1826955c-3520-b639-037c-f044ee5d26ec",
+							"code": "PDS_UsrBookFormat",
+							"path": "UsrBookFormat",
+							"caption": "#ResourceString(PDS_UsrBookFormat)#",
+							"dataValueType": 10,
+							"referenceSchemaName": "UsrFormat"
+						},
+						{
+							"id": "b3c85181-9721-aae2-beec-423659cf50ff",
+							"code": "PDS_UsrBookAvailableCopies",
+							"path": "UsrBookAvailableCopies",
+							"caption": "#ResourceString(PDS_UsrBookAvailableCopies)#",
+							"dataValueType": 4
+						},
+						{
+							"id": "e7c6ef28-3f1b-8308-0c69-11d4cd9cb597",
+							"code": "PDS_UsrBookAuthor",
+							"path": "UsrBookAuthor",
+							"caption": "#ResourceString(PDS_UsrBookAuthor)#",
+							"dataValueType": 10,
+							"referenceSchemaName": "UsrAuthor"
+						},
+						{
+							"id": "8cf5671d-b9ad-0371-4e9d-9bbbeb8dc7fa",
+							"code": "PDS_UsrBookPublicationDate",
+							"path": "UsrBookPublicationDate",
+							"caption": "#ResourceString(PDS_UsrBookPublicationDate)#",
+							"dataValueType": 8
 						}
 					],
 					"layoutConfig": {
@@ -47,16 +91,50 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 						"width": 300
 					},
 					"primaryColumnName": "PDS_Id",
-					"sorting": "$ItemsSorting | crt.ToDataTableSortingConfig: 'Items'"
+					"sorting": "$ItemsSorting | crt.ToDataTableSortingConfig: 'Items'",
+					"visible": true,
+					"fitContent": true
 				}
 			},
 			{
 				"operation": "remove",
 				"name": "DataTable",
 				"properties": [
+					"placeholder",
 					"selectionState",
 					"_selectionOptions"
 				]
+			},
+			{
+				"operation": "insert",
+				"name": "Button_u00s0z9",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_u00s0z9_caption)#",
+					"color": "accent",
+					"disabled": false,
+					"size": "large",
+					"iconPosition": "right-icon",
+					"layoutConfig": {},
+					"visible": true,
+					"icon": "person-button-icon"
+				},
+				"parentName": "TitleContainer",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "MenuItem_n8azhge",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(MenuItem_n8azhge_caption)#",
+					"visible": true,
+					"icon": "car-icon"
+				},
+				"parentName": "AddButton",
+				"propertyName": "menuItems",
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -82,7 +160,8 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 						"bottom": "none",
 						"left": "none"
 					},
-					"fitContent": true
+					"fitContent": true,
+					"visible": true
 				},
 				"parentName": "MainContainer",
 				"propertyName": "items",
@@ -153,8 +232,7 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 										"args": [
 											{
 												"target": {
-													"viewAttributeName": "Items",
-													"filterColumn": "Tag_Virtual_Column"
+													"viewAttributeName": "Items"
 												},
 												"quickFilterType": "lookup"
 											}
@@ -364,6 +442,9 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 								}
 							}
 						}
+					},
+					"Items_PredefinedFilter": {
+						"value": null
 					}
 				}
 			},
@@ -380,7 +461,13 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"rowCount": 30
 						},
 						"sortingConfig": {
-							"attributeName": "ItemsSorting"
+							"attributeName": "ItemsSorting",
+							"default": [
+								{
+									"direction": "asc",
+									"columnName": "UsrBookLocation"
+								}
+							]
 						},
 						"filterAttributes": [
 							{
@@ -388,12 +475,12 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 								"name": "FolderTree_active_folder_filter"
 							},
 							{
-								"name": "Items_PredefinedFilter",
+								"name": "LookupQuickFilterByTag_Items",
 								"loadOnChange": true
 							},
 							{
-								"name": "LookupQuickFilterByTag_Items",
-								"loadOnChange": true
+								"loadOnChange": true,
+								"name": "Items_PredefinedFilter"
 							}
 						]
 					}
@@ -408,24 +495,39 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					"attributes"
 				],
 				"values": {
+					"PDS_UsrBookTitle": {
+						"modelConfig": {
+							"path": "PDS.UsrBookTitle"
+						}
+					},
+					"PDS_UsrBookLocation": {
+						"modelConfig": {
+							"path": "PDS.UsrBookLocation"
+						}
+					},
+					"PDS_UsrBookFormat": {
+						"modelConfig": {
+							"path": "PDS.UsrBookFormat"
+						}
+					},
+					"PDS_UsrBookAvailableCopies": {
+						"modelConfig": {
+							"path": "PDS.UsrBookAvailableCopies"
+						}
+					},
+					"PDS_UsrBookAuthor": {
+						"modelConfig": {
+							"path": "PDS.UsrBookAuthor"
+						}
+					},
+					"PDS_UsrBookPublicationDate": {
+						"modelConfig": {
+							"path": "PDS.UsrBookPublicationDate"
+						}
+					},
 					"PDS_Id": {
 						"modelConfig": {
 							"path": "PDS.Id"
-						}
-					},
-					"PDS_UsrName": {
-						"modelConfig": {
-							"path": "PDS.UsrName"
-						}
-					},
-					"PDS_CreatedOn": {
-						"modelConfig": {
-							"path": "PDS.CreatedOn"
-						}
-					},
-					"PDS_CreatedBy": {
-						"modelConfig": {
-							"path": "PDS.CreatedBy"
 						}
 					}
 				}
@@ -441,7 +543,27 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"type": "crt.EntityDataSource",
 							"hiddenInPageDesigner": true,
 							"config": {
-								"entitySchemaName": "UsrLibrary"
+								"entitySchemaName": "UsrBook",
+								"attributes": {
+									"UsrBookTitle": {
+										"path": "UsrBookTitle"
+									},
+									"UsrBookLocation": {
+										"path": "UsrBookLocation"
+									},
+									"UsrBookFormat": {
+										"path": "UsrBookFormat"
+									},
+									"UsrBookAvailableCopies": {
+										"path": "UsrBookAvailableCopies"
+									},
+									"UsrBookAuthor": {
+										"path": "UsrBookAuthor"
+									},
+									"UsrBookPublicationDate": {
+										"path": "UsrBookPublicationDate"
+									}
+								}
 							},
 							"scope": "viewElement"
 						}

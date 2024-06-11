@@ -3,8 +3,12 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Library list page" />
+			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.Button_u00s0z9_caption.Value" Value="Add User" />
+			<Item Name="LocalizableStrings.DataImportButton_caption.Value" Value="Import" />
 			<Item Name="LocalizableStrings.LookupQuickFilterByTag_config_caption.Value" Value="Tag filter" />
 			<Item Name="LocalizableStrings.LookupQuickFilterByTag_config_hint.Value" Value="Select tag to filter" />
+			<Item Name="LocalizableStrings.MenuItem_n8azhge_caption.Value" Value="Make pre-order" />
 			<Item Name="LocalizableStrings.RefreshButtonCaption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Search" />
 		</Items>
