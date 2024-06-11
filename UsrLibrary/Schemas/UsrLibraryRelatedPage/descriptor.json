@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "1117a841-23bb-4276-a086-8baf6e3b292f",
+    "Name": "UsrLibraryRelatedPage",
+    "ModifiedOnUtc": "\/Date(1718103555000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Library (Page settings)",
+    "DependsOn": []
+  }
+}
