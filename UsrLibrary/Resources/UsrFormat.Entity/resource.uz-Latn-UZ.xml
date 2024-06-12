@@ -3,7 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Library Format" />
-			<Item Name="Columns.UsrFormatTitle.Caption" Value="Title" />
+			<Item Name="Columns.Name.Caption" Value="Title" />
 		</Items>
 	</Group>
 </Resources>

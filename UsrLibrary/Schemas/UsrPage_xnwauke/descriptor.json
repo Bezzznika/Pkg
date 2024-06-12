@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "5d3315fb-a982-474c-8540-6252b1d2a6d1",
+    "Name": "UsrPage_xnwauke",
+    "ModifiedOnUtc": "\/Date(1718174449000)\/",
+    "Parent": {
+      "UId": "3b2e117f-8c6b-4ca5-80a2-7ebb497cddf9",
+      "Name": "PageWithTabsFreedomTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Create a library user page"
+  }
+}

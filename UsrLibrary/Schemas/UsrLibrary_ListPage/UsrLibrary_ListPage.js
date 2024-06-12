@@ -37,73 +37,8 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				}
 			},
 			{
-				"operation": "merge",
-				"name": "DataTable",
-				"values": {
-					"columns": [
-						{
-							"id": "1621337f-e2d8-09d2-707f-13dbc5c6f7dd",
-							"code": "PDS_UsrBookTitle",
-							"path": "UsrBookTitle",
-							"caption": "#ResourceString(PDS_UsrBookTitle)#",
-							"dataValueType": 28
-						},
-						{
-							"id": "e3e3ee8b-8385-a3dc-3f81-65faf6185d16",
-							"code": "PDS_UsrBookLocation",
-							"path": "UsrBookLocation",
-							"caption": "#ResourceString(PDS_UsrBookLocation)#",
-							"dataValueType": 28
-						},
-						{
-							"id": "1826955c-3520-b639-037c-f044ee5d26ec",
-							"code": "PDS_UsrBookFormat",
-							"path": "UsrBookFormat",
-							"caption": "#ResourceString(PDS_UsrBookFormat)#",
-							"dataValueType": 10,
-							"referenceSchemaName": "UsrFormat"
-						},
-						{
-							"id": "b3c85181-9721-aae2-beec-423659cf50ff",
-							"code": "PDS_UsrBookAvailableCopies",
-							"path": "UsrBookAvailableCopies",
-							"caption": "#ResourceString(PDS_UsrBookAvailableCopies)#",
-							"dataValueType": 4
-						},
-						{
-							"id": "e7c6ef28-3f1b-8308-0c69-11d4cd9cb597",
-							"code": "PDS_UsrBookAuthor",
-							"path": "UsrBookAuthor",
-							"caption": "#ResourceString(PDS_UsrBookAuthor)#",
-							"dataValueType": 10,
-							"referenceSchemaName": "UsrAuthor"
-						},
-						{
-							"id": "8cf5671d-b9ad-0371-4e9d-9bbbeb8dc7fa",
-							"code": "PDS_UsrBookPublicationDate",
-							"path": "UsrBookPublicationDate",
-							"caption": "#ResourceString(PDS_UsrBookPublicationDate)#",
-							"dataValueType": 8
-						}
-					],
-					"layoutConfig": {
-						"basis": "100%",
-						"width": 300
-					},
-					"primaryColumnName": "PDS_Id",
-					"sorting": "$ItemsSorting | crt.ToDataTableSortingConfig: 'Items'",
-					"visible": true,
-					"fitContent": true
-				}
-			},
-			{
 				"operation": "remove",
-				"name": "DataTable",
-				"properties": [
-					"placeholder",
-					"selectionState",
-					"_selectionOptions"
-				]
+				"name": "DataTable"
 			},
 			{
 				"operation": "insert",
@@ -117,7 +52,14 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					"iconPosition": "right-icon",
 					"layoutConfig": {},
 					"visible": true,
-					"icon": "person-button-icon"
+					"icon": "person-button-icon",
+					"clicked": {
+						"request": "crt.OpenPageRequest",
+						"params": {
+							"schemaName": "UsrPage_xnwauke"
+						}
+					},
+					"clickMode": "default"
 				},
 				"parentName": "TitleContainer",
 				"propertyName": "items",
@@ -223,24 +165,7 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					},
 					"filterType": "lookup",
 					"_filterOptions": {
-						"expose": [
-							{
-								"attribute": "LookupQuickFilterByTag_Items",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "Items"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							}
-						],
+						"expose": [],
 						"from": "LookupQuickFilterByTag_Value"
 					}
 				},
@@ -283,9 +208,7 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				"values": {
 					"type": "crt.SearchFilter",
 					"placeholder": "#ResourceString(SearchFilter_placeholder)#",
-					"targetAttributes": [
-						"Items"
-					]
+					"targetAttributes": []
 				},
 				"parentName": "RightFilterContainer",
 				"propertyName": "items",
@@ -332,17 +255,7 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 						"section-folder-tree"
 					],
 					"_filterOptions": {
-						"expose": [
-							{
-								"attribute": "FolderTree_active_folder_filter",
-								"converters": [
-									{
-										"converter": "crt.FolderTreeActiveFilterAttributeConverter",
-										"args": []
-									}
-								]
-							}
-						],
+						"expose": [],
 						"from": [
 							"FolderTree_items",
 							"FolderTree_favoriteItems",
@@ -353,6 +266,96 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				"parentName": "SectionContentWrapper",
 				"propertyName": "items",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_ljqujxs",
+				"values": {
+					"type": "crt.DataGrid",
+					"columns": [
+						{
+							"id": "9c998394-a847-d91f-9087-500aa7afface",
+							"code": "DataGrid_ljqujxsDS_UsrBookTitle",
+							"path": "UsrBookTitle",
+							"caption": "#ResourceString(DataGrid_ljqujxsDS_UsrBookTitle)#",
+							"dataValueType": 28
+						},
+						{
+							"id": "fe61f06f-2a4f-3de5-58a1-5a5bf33477d0",
+							"code": "DataGrid_ljqujxsDS_UsrBookQuantity",
+							"path": "UsrBookQuantity",
+							"caption": "#ResourceString(DataGrid_ljqujxsDS_UsrBookQuantity)#",
+							"dataValueType": 4
+						},
+						{
+							"id": "e7d0a865-0a3a-8cfa-2204-478e3db90be6",
+							"code": "DataGrid_ljqujxsDS_UsrBookPublicationDate",
+							"path": "UsrBookPublicationDate",
+							"caption": "#ResourceString(DataGrid_ljqujxsDS_UsrBookPublicationDate)#",
+							"dataValueType": 8
+						},
+						{
+							"id": "ef880ec3-6182-ee91-dbae-1da2bba8fb2a",
+							"code": "DataGrid_ljqujxsDS_UsrBookLocation",
+							"path": "UsrBookLocation",
+							"caption": "#ResourceString(DataGrid_ljqujxsDS_UsrBookLocation)#",
+							"dataValueType": 28
+						},
+						{
+							"id": "9c469461-f92c-1627-e46b-347413172c58",
+							"code": "DataGrid_ljqujxsDS_UsrBookGenre",
+							"path": "UsrBookGenre",
+							"caption": "#ResourceString(DataGrid_ljqujxsDS_UsrBookGenre)#",
+							"dataValueType": 10,
+							"referenceSchemaName": "UsrGenre"
+						},
+						{
+							"id": "5f5bcc20-ce1f-9460-59a9-135a9c575894",
+							"code": "DataGrid_ljqujxsDS_UsrBookFormat",
+							"path": "UsrBookFormat",
+							"caption": "#ResourceString(DataGrid_ljqujxsDS_UsrBookFormat)#",
+							"dataValueType": 10,
+							"referenceSchemaName": "UsrFormat"
+						},
+						{
+							"id": "e88c119e-cfca-1a03-ae4f-ccc2789f3a03",
+							"code": "DataGrid_ljqujxsDS_UsrBookAvailableCopies",
+							"path": "UsrBookAvailableCopies",
+							"caption": "#ResourceString(DataGrid_ljqujxsDS_UsrBookAvailableCopies)#",
+							"dataValueType": 4
+						},
+						{
+							"id": "979b8ea3-2805-856b-a8f6-be9295f76c42",
+							"code": "DataGrid_ljqujxsDS_UsrBookAuthor",
+							"path": "UsrBookAuthor",
+							"caption": "#ResourceString(DataGrid_ljqujxsDS_UsrBookAuthor)#",
+							"dataValueType": 10,
+							"referenceSchemaName": "UsrAuthor"
+						}
+					],
+					"items": "$DataGrid_ljqujxs",
+					"layoutConfig": {
+						"basis": "100%",
+						"width": 300
+					},
+					"classes": [
+						"section-data-grid"
+					],
+					"features": {
+						"rows": {
+							"selection": {
+								"enable": true,
+								"multiple": true
+							}
+						}
+					},
+					"primaryColumnName": "DataGrid_ljqujxsDS_Id",
+					"visible": true,
+					"fitContent": true
+				},
+				"parentName": "SectionContentWrapper",
+				"propertyName": "items",
+				"index": 1
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -445,6 +448,61 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					},
 					"Items_PredefinedFilter": {
 						"value": null
+					},
+					"DataGrid_ljqujxs": {
+						"isCollection": true,
+						"modelConfig": {
+							"path": "DataGrid_ljqujxsDS"
+						},
+						"viewModelConfig": {
+							"attributes": {
+								"DataGrid_ljqujxsDS_UsrBookTitle": {
+									"modelConfig": {
+										"path": "DataGrid_ljqujxsDS.UsrBookTitle"
+									}
+								},
+								"DataGrid_ljqujxsDS_UsrBookQuantity": {
+									"modelConfig": {
+										"path": "DataGrid_ljqujxsDS.UsrBookQuantity"
+									}
+								},
+								"DataGrid_ljqujxsDS_UsrBookPublicationDate": {
+									"modelConfig": {
+										"path": "DataGrid_ljqujxsDS.UsrBookPublicationDate"
+									}
+								},
+								"DataGrid_ljqujxsDS_UsrBookLocation": {
+									"modelConfig": {
+										"path": "DataGrid_ljqujxsDS.UsrBookLocation"
+									}
+								},
+								"DataGrid_ljqujxsDS_UsrBookGenre": {
+									"modelConfig": {
+										"path": "DataGrid_ljqujxsDS.UsrBookGenre"
+									}
+								},
+								"DataGrid_ljqujxsDS_UsrBookFormat": {
+									"modelConfig": {
+										"path": "DataGrid_ljqujxsDS.UsrBookFormat"
+									}
+								},
+								"DataGrid_ljqujxsDS_UsrBookAvailableCopies": {
+									"modelConfig": {
+										"path": "DataGrid_ljqujxsDS.UsrBookAvailableCopies"
+									}
+								},
+								"DataGrid_ljqujxsDS_UsrBookAuthor": {
+									"modelConfig": {
+										"path": "DataGrid_ljqujxsDS.UsrBookAuthor"
+									}
+								},
+								"DataGrid_ljqujxsDS_Id": {
+									"modelConfig": {
+										"path": "DataGrid_ljqujxsDS.Id"
+									}
+								}
+							}
+						}
 					}
 				}
 			},
@@ -465,24 +523,11 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"default": [
 								{
 									"direction": "asc",
-									"columnName": "UsrBookLocation"
+									"columnName": "UsrBookGenre"
 								}
 							]
 						},
-						"filterAttributes": [
-							{
-								"loadOnChange": true,
-								"name": "FolderTree_active_folder_filter"
-							},
-							{
-								"name": "LookupQuickFilterByTag_Items",
-								"loadOnChange": true
-							},
-							{
-								"loadOnChange": true,
-								"name": "Items_PredefinedFilter"
-							}
-						]
+						"filterAttributes": []
 					}
 				}
 			},
@@ -515,14 +560,14 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"path": "PDS.UsrBookAvailableCopies"
 						}
 					},
-					"PDS_UsrBookAuthor": {
-						"modelConfig": {
-							"path": "PDS.UsrBookAuthor"
-						}
-					},
 					"PDS_UsrBookPublicationDate": {
 						"modelConfig": {
 							"path": "PDS.UsrBookPublicationDate"
+						}
+					},
+					"PDS_UsrBookGenre": {
+						"modelConfig": {
+							"path": "PDS.UsrBookGenre"
 						}
 					},
 					"PDS_Id": {
@@ -557,15 +602,48 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 									"UsrBookAvailableCopies": {
 										"path": "UsrBookAvailableCopies"
 									},
-									"UsrBookAuthor": {
-										"path": "UsrBookAuthor"
-									},
 									"UsrBookPublicationDate": {
 										"path": "UsrBookPublicationDate"
+									},
+									"UsrBookGenre": {
+										"path": "UsrBookGenre"
 									}
 								}
 							},
 							"scope": "viewElement"
+						},
+						"DataGrid_ljqujxsDS": {
+							"type": "crt.EntityDataSource",
+							"scope": "viewElement",
+							"config": {
+								"entitySchemaName": "UsrBook",
+								"attributes": {
+									"UsrBookTitle": {
+										"path": "UsrBookTitle"
+									},
+									"UsrBookQuantity": {
+										"path": "UsrBookQuantity"
+									},
+									"UsrBookPublicationDate": {
+										"path": "UsrBookPublicationDate"
+									},
+									"UsrBookLocation": {
+										"path": "UsrBookLocation"
+									},
+									"UsrBookGenre": {
+										"path": "UsrBookGenre"
+									},
+									"UsrBookFormat": {
+										"path": "UsrBookFormat"
+									},
+									"UsrBookAvailableCopies": {
+										"path": "UsrBookAvailableCopies"
+									},
+									"UsrBookAuthor": {
+										"path": "UsrBookAuthor"
+									}
+								}
+							}
 						}
 					}
 				}

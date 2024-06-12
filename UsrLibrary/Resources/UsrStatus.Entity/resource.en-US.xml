@@ -3,7 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Object" />
-			<Item Name="Columns.UsrStatusMessage.Caption" Value="Message" />
+			<Item Name="Columns.Name.Caption" Value="Library message" />
 			<Item Name="EventsProcessSchema.Caption" Value="Base object" />
 		</Items>
 	</Group>

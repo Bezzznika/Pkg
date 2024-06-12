@@ -1,11 +1,11 @@
 ﻿{
   "Descriptor": {
-    "UId": "e4991c7d-1a03-4b89-9ca5-330fa38757d3",
+    "UId": "2af71ea1-fe65-40d4-b743-ce8a090c59b4",
     "Name": "UsrStatus",
-    "ModifiedOnUtc": "\/Date(1718108608000)\/",
+    "ModifiedOnUtc": "\/Date(1718173600000)\/",
     "Parent": {
-      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
-      "Name": "BaseEntity"
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
     },
     "ManagerName": "EntitySchemaManager",
     "Caption": "Object",

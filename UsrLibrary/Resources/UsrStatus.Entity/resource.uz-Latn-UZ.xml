@@ -2,8 +2,8 @@
 <Resources Culture="uz-Latn-UZ">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Status" />
-			<Item Name="Columns.UsrStatusMessage.Caption" Value="Message" />
+			<Item Name="Caption" Value="Library Status" />
+			<Item Name="Columns.Name.Caption" Value="Library message" />
 			<Item Name="EventsProcessSchema.Caption" Value="Business process" />
 		</Items>
 	</Group>
