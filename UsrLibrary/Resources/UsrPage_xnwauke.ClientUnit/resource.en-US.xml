@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="New edit page" />
+			<Item Name="LocalizableStrings.addRecord_17d27lt_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_oyyi3qm_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.TabContainer_5i1rgaj_caption.Value" Value="New tab" />
 		</Items>

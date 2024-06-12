@@ -138,7 +138,7 @@ define("UsrPage_xnwauke", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_x6errvd",
+				"name": "ComboBox_jta8ca8",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
@@ -152,28 +152,14 @@ define("UsrPage_xnwauke", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_
 					"control": "$LookupAttribute_qqk4txj",
 					"listActions": [],
 					"showValueAsLink": true,
-					"controlActions": []
+					"controlActions": [],
+					"visible": true,
+					"placeholder": "",
+					"tooltip": ""
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
 				"index": 6
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_oyyi3qm",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_oyyi3qm_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_x6errvd",
-				"propertyName": "listActions",
-				"index": 0
 			},
 			{
 				"operation": "insert",
