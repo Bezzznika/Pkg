@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "fe7f68c9-4a92-4a5e-8eb3-8d3a32848606",
+    "Name": "UsrLibraryOrdersRelatedPage",
+    "ModifiedOnUtc": "\/Date(1718347292000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Library orders (Page settings)",
+    "DependsOn": []
+  }
+}

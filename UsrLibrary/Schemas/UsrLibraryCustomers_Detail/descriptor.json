@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "2d5de581-c396-4867-a0bb-9d25a17856b6",
+    "Name": "UsrLibraryCustomers_Detail",
+    "ModifiedOnUtc": "\/Date(1718347247000)\/",
+    "Parent": {
+      "UId": "01eb38ee-668a-42f0-999d-c2534f979089",
+      "Name": "BaseGridDetailV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Library Customers detail",
+    "DependsOn": []
+  }
+}
