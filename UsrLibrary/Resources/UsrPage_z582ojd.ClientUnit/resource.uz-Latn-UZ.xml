@@ -10,6 +10,7 @@
 			<Item Name="LocalizableStrings.NumberInput_4sezf2l_placeholder.Value" Value="0" />
 			<Item Name="LocalizableStrings.NumberInput_k2i0x0f_placeholder.Value" Value="0" />
 			<Item Name="LocalizableStrings.NumberInput_zco7188_placeholder.Value" Value="0" />
+			<Item Name="LocalizableStrings.PhoneInput_76zpqgf_placeholder.Value" Value="+998901894277" />
 		</Items>
 	</Group>
 </Resources>

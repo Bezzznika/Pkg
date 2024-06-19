@@ -212,7 +212,7 @@ define("UsrPage_z582ojd", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_
 					"labelPosition": "auto",
 					"control": "$StringAttribute_34o3fuo",
 					"visible": true,
-					"placeholder": "",
+					"placeholder": "#ResourceString(PhoneInput_76zpqgf_placeholder)#",
 					"tooltip": ""
 				},
 				"parentName": "GridContainer_5r7b7qq",
