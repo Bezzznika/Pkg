@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "049500c0-0edd-4b38-983b-63ee3a170d27",
+    "Name": "UsrPage_z582ojd",
+    "ModifiedOnUtc": "\/Date(1718804590000)\/",
+    "Parent": {
+      "UId": "ecdcc8ff-272c-4957-9381-7d74ce17e140",
+      "Name": "BaseMiniPageTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Create a library user minipage"
+  }
+}
