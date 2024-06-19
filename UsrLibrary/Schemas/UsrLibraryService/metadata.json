@@ -1,0 +1,216 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "ServiceSchemaManager",
+      "UId": "5e2b5c4c-a45a-4df1-8216-56f02ef6a1ff",
+      "A2": "UsrLibraryService",
+      "A5": "25206bb7-5413-4920-8839-eff83964d1b7",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "fa6cf5ae-1351-4b73-b83c-6309e27c764a",
+      "B8": "8.1.0.6827",
+      "IQ1": "https://localhost:7206",
+      "IQ2": 1,
+      "IQ7": [],
+      "IQ4": [
+        {
+          "UId": "6bae74b2-9bd3-4e1f-9a3c-132721e9a7d5",
+          "A2": "UsrMethod2",
+          "A3": "5e2b5c4c-a45a-4df1-8216-56f02ef6a1ff",
+          "A4": "5e2b5c4c-a45a-4df1-8216-56f02ef6a1ff",
+          "IR3": 5000,
+          "IR4": true,
+          "IR5": "null",
+          "IR1": {
+            "IW2": 1,
+            "IW1": [
+              {
+                "UId": "ea2d1472-3bab-49ef-bdc0-2b83f8ae7fd0",
+                "A2": "UsrName",
+                "IU1": "$.name",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "65bbf20e-2e9f-478e-8041-e0a88206a6bc",
+                "A2": "UsrBirthdate",
+                "IU1": "$.birth_date",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "89416c4e-4490-4c06-843f-cc5a6219091d",
+                "A2": "UsrNationality",
+                "IU1": "$.nationality",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              }
+            ],
+            "IT2": 2,
+            "IT1": "/Author/InsertAuthors"
+          },
+          "IR2": {
+            "IW2": 1,
+            "IW1": [
+              {
+                "UId": "7b3ce4b5-da1e-4f22-9900-7ba95a0e41ef",
+                "A2": "UsrId",
+                "IU1": "$.id",
+                "IU2": "Integer",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "2ddac65e-6c88-4a00-9ec5-cb42c9bee2f0",
+                "A2": "UsrName",
+                "IU1": "$.name",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "94e2ab41-8576-4dc9-adc4-ff72cb3e4511",
+                "A2": "UsrBirthdate",
+                "IU1": "$.birth_date",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              },
+              {
+                "UId": "4691b0b4-52da-417f-9a2f-801b9c8ca769",
+                "A2": "UsrNationality",
+                "IU1": "$.nationality",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              }
+            ]
+          }
+        },
+        {
+          "UId": "3dd883c0-c086-41de-a244-16eccb177259",
+          "A2": "UsrMethod1",
+          "A3": "5e2b5c4c-a45a-4df1-8216-56f02ef6a1ff",
+          "A4": "5e2b5c4c-a45a-4df1-8216-56f02ef6a1ff",
+          "IR3": 5000,
+          "IR4": true,
+          "IR5": "null",
+          "IR1": {
+            "IW2": 1,
+            "IW1": [],
+            "IT2": 1,
+            "IT1": "/Author/ShowAuthors"
+          },
+          "IR2": {
+            "IW2": 1,
+            "IW1": [
+              {
+                "UId": "5c05db18-6b1f-4ebf-914e-4b369b61f5f7",
+                "A2": "UsrParameter",
+                "IU1": "$",
+                "IU2": "Object",
+                "IU3": true,
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": [
+                  {
+                    "UId": "c689991c-aea4-4612-8072-8766cfd03028",
+                    "A2": "UsrId",
+                    "IU1": "id",
+                    "IU2": "Integer",
+                    "IU8": "item",
+                    "IU4": 1,
+                    "IU5": {
+                      "IV1": "null"
+                    },
+                    "IU6": []
+                  },
+                  {
+                    "UId": "6ed21ed6-1f1b-405e-8213-b2ddb75ff60e",
+                    "A2": "UsrName",
+                    "IU1": "name",
+                    "IU2": "Text",
+                    "IU8": "item",
+                    "IU4": 1,
+                    "IU5": {
+                      "IV1": "null"
+                    },
+                    "IU6": []
+                  },
+                  {
+                    "UId": "24846386-49a2-435e-9ad3-07d7e05d5816",
+                    "A2": "UsrBirthdate",
+                    "IU1": "birth_date",
+                    "IU2": "Text",
+                    "IU8": "item",
+                    "IU4": 1,
+                    "IU5": {
+                      "IV1": "null"
+                    },
+                    "IU6": []
+                  },
+                  {
+                    "UId": "53efac7a-1fd6-40d9-9b9d-eef7800c5757",
+                    "A2": "UsrNationality",
+                    "IU1": "nationality",
+                    "IU2": "Text",
+                    "IU8": "item",
+                    "IU4": 1,
+                    "IU5": {
+                      "IV1": "null"
+                    },
+                    "IU6": []
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "IQ5": {
+        "IY1": 1,
+        "IZ1": {
+          "IV2": 2
+        },
+        "IZ2": {
+          "IV2": 2
+        }
+      }
+    }
+  }
+}

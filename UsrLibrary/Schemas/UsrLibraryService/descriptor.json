@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "5e2b5c4c-a45a-4df1-8216-56f02ef6a1ff",
+    "Name": "UsrLibraryService",
+    "ModifiedOnUtc": "\/Date(1718365131000)\/",
+    "ManagerName": "ServiceSchemaManager",
+    "Caption": "LibraryAPI",
+    "DependsOn": []
+  }
+}

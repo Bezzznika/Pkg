@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="LibraryAPI" />
+			<Item Name="ServiceMethods.UsrMethod1.Caption" Value="/Author/ShowAuthors" />
+			<Item Name="ServiceMethods.UsrMethod1.Response.Parameters.UsrParameter.Caption" Value="Parameter" />
+			<Item Name="ServiceMethods.UsrMethod1.Response.Parameters.UsrParameter.ItemProperties.UsrBirthdate.Caption" Value="Birth_date" />
+			<Item Name="ServiceMethods.UsrMethod1.Response.Parameters.UsrParameter.ItemProperties.UsrId.Caption" Value="Id" />
+			<Item Name="ServiceMethods.UsrMethod1.Response.Parameters.UsrParameter.ItemProperties.UsrName.Caption" Value="Name" />
+			<Item Name="ServiceMethods.UsrMethod1.Response.Parameters.UsrParameter.ItemProperties.UsrNationality.Caption" Value="Nationality" />
+			<Item Name="ServiceMethods.UsrMethod2.Caption" Value="Method 1" />
+			<Item Name="ServiceMethods.UsrMethod2.Request.Parameters.UsrBirthdate.Caption" Value="Birth_date" />
+			<Item Name="ServiceMethods.UsrMethod2.Request.Parameters.UsrName.Caption" Value="Name" />
+			<Item Name="ServiceMethods.UsrMethod2.Request.Parameters.UsrNationality.Caption" Value="Nationality" />
+			<Item Name="ServiceMethods.UsrMethod2.Response.Parameters.UsrBirthdate.Caption" Value="Birth_date" />
+			<Item Name="ServiceMethods.UsrMethod2.Response.Parameters.UsrId.Caption" Value="Id" />
+			<Item Name="ServiceMethods.UsrMethod2.Response.Parameters.UsrName.Caption" Value="Name" />
+			<Item Name="ServiceMethods.UsrMethod2.Response.Parameters.UsrNationality.Caption" Value="Nationality" />
+		</Items>
+	</Group>
+</Resources>
