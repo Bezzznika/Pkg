@@ -3,8 +3,11 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Library orders" />
+			<Item Name="Columns.CreatedOn.Caption" Value="Buyurtma kuni" />
 			<Item Name="Columns.UsrClient.Caption" Value="Client" />
 			<Item Name="Columns.UsrCopyID.Caption" Value="BID" />
+			<Item Name="Columns.UsrReturnDate.Caption" Value="Return date" />
+			<Item Name="Columns.UsrStatusCode.Caption" Value="Status code" />
 		</Items>
 	</Group>
 </Resources>

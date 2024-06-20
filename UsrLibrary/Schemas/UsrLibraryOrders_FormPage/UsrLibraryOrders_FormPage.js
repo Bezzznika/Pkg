@@ -68,7 +68,7 @@ define("UsrLibraryOrders_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 					"showValueAsLink": true,
 					"controlActions": [],
 					"visible": true,
-					"placeholder": "",
+					"placeholder": "#ResourceString(ComboBox_ioljf13_placeholder)#",
 					"tooltip": ""
 				},
 				"parentName": "SideAreaProfileContainer",
@@ -93,12 +93,59 @@ define("UsrLibraryOrders_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 					"showValueAsLink": true,
 					"controlActions": [],
 					"visible": true,
-					"placeholder": "",
+					"placeholder": "#ResourceString(ComboBox_4goyf74_placeholder)#",
 					"tooltip": ""
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "DateTimePicker_acn8mup",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 3,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.DateTimePicker",
+					"pickerType": "datetime",
+					"label": "$Resources.Strings.DateTimeAttribute_01xxdyd",
+					"labelPosition": "auto",
+					"control": "$DateTimeAttribute_01xxdyd",
+					"visible": true,
+					"readonly": true,
+					"placeholder": "",
+					"tooltip": ""
+				},
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "DateTimePicker_16fgsjo",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 4,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.DateTimePicker",
+					"pickerType": "datetime",
+					"label": "$Resources.Strings.DateTimeAttribute_xmzkfh3",
+					"labelPosition": "auto",
+					"control": "$DateTimeAttribute_xmzkfh3",
+					"visible": true,
+					"placeholder": "#ResourceString(DateTimePicker_16fgsjo_placeholder)#",
+					"tooltip": ""
+				},
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -161,6 +208,16 @@ define("UsrLibraryOrders_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 					"StringAttribute_yauhfg6": {
 						"modelConfig": {
 							"path": "PageParameters.UsrTextParameter1"
+						}
+					},
+					"DateTimeAttribute_01xxdyd": {
+						"modelConfig": {
+							"path": "PDS.CreatedOn"
+						}
+					},
+					"DateTimeAttribute_xmzkfh3": {
+						"modelConfig": {
+							"path": "PDS.UsrReturnDate"
 						}
 					}
 				}

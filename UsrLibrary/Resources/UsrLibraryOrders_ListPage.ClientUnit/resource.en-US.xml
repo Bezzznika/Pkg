@@ -6,6 +6,13 @@
 			<Item Name="LocalizableStrings.Button_d29yb6v_caption.Value" Value="Mystery Button" />
 			<Item Name="LocalizableStrings.LookupQuickFilterByTag_config_caption.Value" Value="Tag filter" />
 			<Item Name="LocalizableStrings.LookupQuickFilterByTag_config_hint.Value" Value="Select tag to filter" />
+			<Item Name="LocalizableStrings.PDS_CreatedOn.Value" Value="Date of order" />
+			<Item Name="LocalizableStrings.PDS_UsrClientUsrContactNumber.Value" Value="Phone number" />
+			<Item Name="LocalizableStrings.PDS_UsrClientUsrName.Value" Value="Name" />
+			<Item Name="LocalizableStrings.PDS_UsrCopyIDUsrBookAuthor.Value" Value="Author" />
+			<Item Name="LocalizableStrings.PDS_UsrCopyIDUsrBookAvailableCopies.Value" Value="Available Copies" />
+			<Item Name="LocalizableStrings.PDS_UsrCopyIDUsrBookLocation.Value" Value="Location" />
+			<Item Name="LocalizableStrings.PDS_UsrCopyIDUsrBookTitle.Value" Value="Book title" />
 			<Item Name="LocalizableStrings.RefreshButtonCaption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Search" />
 		</Items>

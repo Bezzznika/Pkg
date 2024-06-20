@@ -5,6 +5,13 @@
 			<Item Name="Caption" Value="Страница с реестром Library orders" />
 			<Item Name="LocalizableStrings.LookupQuickFilterByTag_config_caption.Value" Value="Фильтр по тегам" />
 			<Item Name="LocalizableStrings.LookupQuickFilterByTag_config_hint.Value" Value="Выберите тег для фильтрации" />
+			<Item Name="LocalizableStrings.PDS_CreatedOn.Value" Value="Дата заказа" />
+			<Item Name="LocalizableStrings.PDS_UsrClientUsrContactNumber.Value" Value="Контактный номер" />
+			<Item Name="LocalizableStrings.PDS_UsrClientUsrName.Value" Value="Имя" />
+			<Item Name="LocalizableStrings.PDS_UsrCopyIDUsrBookAuthor.Value" Value="Автор" />
+			<Item Name="LocalizableStrings.PDS_UsrCopyIDUsrBookAvailableCopies.Value" Value="Доступные экземпляры" />
+			<Item Name="LocalizableStrings.PDS_UsrCopyIDUsrBookLocation.Value" Value="Местоположение" />
+			<Item Name="LocalizableStrings.PDS_UsrCopyIDUsrBookTitle.Value" Value="Название книги" />
 			<Item Name="LocalizableStrings.RefreshButtonCaption.Value" Value="Обновить" />
 			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Поиск" />
 		</Items>

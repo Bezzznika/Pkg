@@ -5,6 +5,9 @@
 			<Item Name="Caption" Value="Library orders form page" />
 			<Item Name="LocalizableStrings.addRecord_gdngeka_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_kcugr79_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.ComboBox_4goyf74_placeholder.Value" Value="(21xxxxx)" />
+			<Item Name="LocalizableStrings.ComboBox_ioljf13_placeholder.Value" Value="(10xxxxx)" />
+			<Item Name="LocalizableStrings.DateTimePicker_16fgsjo_placeholder.Value" Value="(max 7 days)" />
 			<Item Name="LocalizableStrings.GeneralInfoTab_caption.Value" Value="Information about user" />
 			<Item Name="LocalizableStrings.TabContainer_wv21ama_caption.Value" Value="Information about the book" />
 		</Items>

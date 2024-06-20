@@ -4,6 +4,14 @@
 		<Items>
 			<Item Name="Caption" Value="Library orders list page" />
 			<Item Name="LocalizableStrings.Button_d29yb6v_caption.Value" Value="Mystery Button" />
+			<Item Name="LocalizableStrings.LookupQuickFilterByTag_config_caption.Value" Value="Status code" />
+			<Item Name="LocalizableStrings.PDS_CreatedOn.Value" Value="Buyurtma kuni" />
+			<Item Name="LocalizableStrings.PDS_UsrClientUsrContactNumber.Value" Value="Telefon raqami" />
+			<Item Name="LocalizableStrings.PDS_UsrClientUsrName.Value" Value="Ism" />
+			<Item Name="LocalizableStrings.PDS_UsrCopyIDUsrBookAuthor.Value" Value="Yozuvchi" />
+			<Item Name="LocalizableStrings.PDS_UsrCopyIDUsrBookAvailableCopies.Value" Value="Available Copies" />
+			<Item Name="LocalizableStrings.PDS_UsrCopyIDUsrBookLocation.Value" Value="Location" />
+			<Item Name="LocalizableStrings.PDS_UsrCopyIDUsrBookTitle.Value" Value="Kitob nomi" />
 		</Items>
 	</Group>
 </Resources>

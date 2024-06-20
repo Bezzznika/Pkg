@@ -4,6 +4,7 @@
 		<Items>
 			<Item Name="Caption" Value="Library list page" />
 			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="New order" />
+			<Item Name="LocalizableStrings.Button_h7pue0k_caption.Value" Value="Kitobni qoshish" />
 			<Item Name="LocalizableStrings.Button_u00s0z9_caption.Value" Value="Add User" />
 			<Item Name="LocalizableStrings.DataImportButton_caption.Value" Value="Import books" />
 			<Item Name="LocalizableStrings.MenuItem_n8azhge_caption.Value" Value="Make pre-order" />

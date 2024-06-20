@@ -3,8 +3,32 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
 				"operation": "merge",
+				"name": "TitleContainer",
+				"values": {
+					"justifyContent": "space-between",
+					"visible": true,
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"gap": "medium",
+					"wrap": "nowrap"
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "AddButton",
 				"values": {
+					"clicked": {
+						"request": "crt.CreateRecordRequest",
+						"params": {
+							"entityName": "UsrLibraryOrders"
+						}
+					},
 					"caption": "#ResourceString(AddButton_caption)#",
 					"size": "large",
 					"visible": true,
@@ -64,6 +88,25 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				"parentName": "TitleContainer",
 				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "Button_h7pue0k",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_h7pue0k_caption)#",
+					"color": "default",
+					"disabled": false,
+					"size": "large",
+					"iconPosition": "left-icon",
+					"visible": true,
+					"icon": "download-button-icon",
+					"clicked": {},
+					"clickMode": "default"
+				},
+				"parentName": "TitleContainer",
+				"propertyName": "items",
+				"index": 2
 			},
 			{
 				"operation": "insert",

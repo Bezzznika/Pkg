@@ -37,7 +37,7 @@ define("UsrLibraryOrders_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							"caption": "#ResourceString(PDS_UsrClient)#",
 							"dataValueType": 10,
 							"referenceSchemaName": "UsrUser",
-							"width": 158.00001525878906
+							"width": 114
 						},
 						{
 							"id": "228a3a55-28bb-2a9d-1fa8-d7db6803effe",
@@ -45,7 +45,7 @@ define("UsrLibraryOrders_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							"path": "UsrClient.UsrName",
 							"caption": "#ResourceString(PDS_UsrClientUsrName)#",
 							"dataValueType": 27,
-							"width": 176.00001525878906
+							"width": 114
 						},
 						{
 							"id": "3c24240f-bf13-a932-f9f0-d629816a5927",
@@ -53,7 +53,7 @@ define("UsrLibraryOrders_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							"path": "UsrClient.UsrContactNumber",
 							"caption": "#ResourceString(PDS_UsrClientUsrContactNumber)#",
 							"dataValueType": 42,
-							"width": 193.98959350585938
+							"width": 124.9757080078125
 						},
 						{
 							"id": "e5696876-40b8-303d-7ff8-4c21fe4509fb",
@@ -69,7 +69,8 @@ define("UsrLibraryOrders_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							"code": "PDS_UsrCopyIDUsrBookTitle",
 							"path": "UsrCopyID.UsrBookTitle",
 							"caption": "#ResourceString(PDS_UsrCopyIDUsrBookTitle)#",
-							"dataValueType": 28
+							"dataValueType": 28,
+							"width": 150.00001525878906
 						},
 						{
 							"id": "ed39142e-6047-cec6-1c2f-fb9d17b5481a",
@@ -77,21 +78,47 @@ define("UsrLibraryOrders_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							"path": "UsrCopyID.UsrBookAuthor",
 							"caption": "#ResourceString(PDS_UsrCopyIDUsrBookAuthor)#",
 							"dataValueType": 10,
-							"referenceSchemaName": "UsrAuthor"
+							"referenceSchemaName": "UsrAuthor",
+							"width": 136.00001525878906
 						},
 						{
 							"id": "a12a2e38-f35e-270a-a581-a1f78319e435",
 							"code": "PDS_UsrCopyIDUsrBookAvailableCopies",
 							"path": "UsrCopyID.UsrBookAvailableCopies",
 							"caption": "#ResourceString(PDS_UsrCopyIDUsrBookAvailableCopies)#",
-							"dataValueType": 4
+							"dataValueType": 4,
+							"width": 160
 						},
 						{
 							"id": "d6449b2d-9d20-7836-c764-3b558e4b307f",
 							"code": "PDS_UsrCopyIDUsrBookLocation",
 							"path": "UsrCopyID.UsrBookLocation",
 							"caption": "#ResourceString(PDS_UsrCopyIDUsrBookLocation)#",
-							"dataValueType": 28
+							"dataValueType": 28,
+							"width": 118.00001525878906
+						},
+						{
+							"id": "53c8e912-68b1-6264-21ec-7fdf24229703",
+							"code": "PDS_CreatedOn",
+							"path": "CreatedOn",
+							"caption": "#ResourceString(PDS_CreatedOn)#",
+							"dataValueType": 7,
+							"width": 152.00001525878906
+						},
+						{
+							"id": "e820e67b-6d44-240a-b3af-7d3914cf4902",
+							"code": "PDS_UsrReturnDate",
+							"path": "UsrReturnDate",
+							"caption": "#ResourceString(PDS_UsrReturnDate)#",
+							"dataValueType": 7
+						},
+						{
+							"id": "9bb22da3-ad3b-f568-2477-8a6dd23cdf3b",
+							"code": "PDS_UsrStatusCode",
+							"path": "UsrStatusCode",
+							"caption": "#ResourceString(PDS_UsrStatusCode)#",
+							"dataValueType": 10,
+							"referenceSchemaName": "UsrStatus"
 						}
 					],
 					"layoutConfig": {
@@ -231,7 +258,9 @@ define("UsrLibraryOrders_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 						"hint": "#ResourceString(LookupQuickFilterByTag_config_hint)#",
 						"icon": "tag-icon",
 						"iconPosition": "left-icon",
-						"entitySchemaName": "Tag_Virtual_Schema"
+						"entitySchemaName": "UsrStatus",
+						"defaultValue": [],
+						"recordsFilter": null
 					},
 					"filterType": "lookup",
 					"_filterOptions": {
@@ -245,7 +274,7 @@ define("UsrLibraryOrders_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 											{
 												"target": {
 													"viewAttributeName": "Items",
-													"filterColumn": "Tag_Virtual_Column"
+													"filterColumn": "UsrStatusCode"
 												},
 												"quickFilterType": "lookup"
 											}
@@ -255,7 +284,8 @@ define("UsrLibraryOrders_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							}
 						],
 						"from": "LookupQuickFilterByTag_Value"
-					}
+					},
+					"visible": true
 				},
 				"parentName": "LeftFilterContainer",
 				"propertyName": "items",
@@ -339,7 +369,7 @@ define("UsrLibraryOrders_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 					"sourceSchemaName": "FolderTree",
 					"rootSchemaName": "UsrLibraryOrders",
 					"layoutConfig": {
-						"width": 328.125
+						"width": 297.09722900390625
 					},
 					"classes": [
 						"section-folder-tree"
@@ -475,7 +505,7 @@ define("UsrLibraryOrders_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							"default": [
 								{
 									"direction": "asc",
-									"columnName": "UsrCopyIDUsrBookAuthor"
+									"columnName": "CreatedOn"
 								}
 							]
 						},
@@ -545,6 +575,21 @@ define("UsrLibraryOrders_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							"path": "PDS.UsrCopyIDUsrBookLocation"
 						}
 					},
+					"PDS_CreatedOn": {
+						"modelConfig": {
+							"path": "PDS.CreatedOn"
+						}
+					},
+					"PDS_UsrReturnDate": {
+						"modelConfig": {
+							"path": "PDS.UsrReturnDate"
+						}
+					},
+					"PDS_UsrStatusCode": {
+						"modelConfig": {
+							"path": "PDS.UsrStatusCode"
+						}
+					},
 					"PDS_Id": {
 						"modelConfig": {
 							"path": "PDS.Id"
@@ -594,6 +639,15 @@ define("UsrLibraryOrders_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 									"UsrCopyIDUsrBookLocation": {
 										"type": "ForwardReference",
 										"path": "UsrCopyID.UsrBookLocation"
+									},
+									"CreatedOn": {
+										"path": "CreatedOn"
+									},
+									"UsrReturnDate": {
+										"path": "UsrReturnDate"
+									},
+									"UsrStatusCode": {
+										"path": "UsrStatusCode"
 									}
 								}
 							},

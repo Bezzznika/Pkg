@@ -43,7 +43,31 @@
   "E17": "UsrCopyIDId",
   "E18": "UsrCopyIDName"
 }
-~ MetaData.Schema.D2 ["ae0e45ca-c495-4fe7-a39d-3ab7278e1617","e80190a5-03b2-4095-90f7-a193a960adee","ebf6bb93-8aa6-4a01-900d-c6ea67affe21","9928edec-4272-425a-93bb-48743fee4b04","3015559e-cbc6-406a-88af-07f7930be832","3fabd836-6a53-4d8d-9069-6df88d9dae1e","192f18ea-142a-1511-a134-b1dbe78b32a0","ace017f4-1171-2dca-2a55-10f4bff863f0"]
++ MetaData.Schema.D2 {
+  "UId": "b9558b18-6743-f0d4-a9f3-71bc4a3f6d23",
+  "A2": "UsrReturnDate",
+  "A3": "5b9a4105-2a79-4f77-8855-a46b4e33afe7",
+  "A4": "5b9a4105-2a79-4f77-8855-a46b4e33afe7",
+  "A5": "25206bb7-5413-4920-8839-eff83964d1b7",
+  "S2": "d21e9ef4-c064-4012-b286-fa1a8171da44",
+  "E2": 1,
+  "E5": false
+}
++ MetaData.Schema.D2 {
+  "UId": "47f5513b-68e9-7119-b340-3f00a48ee8b8",
+  "A2": "UsrStatusCode",
+  "A3": "5b9a4105-2a79-4f77-8855-a46b4e33afe7",
+  "A4": "5b9a4105-2a79-4f77-8855-a46b4e33afe7",
+  "A5": "25206bb7-5413-4920-8839-eff83964d1b7",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "2af71ea1-fe65-40d4-b743-ce8a090c59b4",
+  "E2": 1,
+  "E6": true,
+  "E20": true,
+  "E17": "UsrStatusCodeId",
+  "E18": "UsrStatusCodeName"
+}
+~ MetaData.Schema.D2 ["ae0e45ca-c495-4fe7-a39d-3ab7278e1617","e80190a5-03b2-4095-90f7-a193a960adee","ebf6bb93-8aa6-4a01-900d-c6ea67affe21","9928edec-4272-425a-93bb-48743fee4b04","3015559e-cbc6-406a-88af-07f7930be832","3fabd836-6a53-4d8d-9069-6df88d9dae1e","192f18ea-142a-1511-a134-b1dbe78b32a0","ace017f4-1171-2dca-2a55-10f4bff863f0","b9558b18-6743-f0d4-a9f3-71bc4a3f6d23","47f5513b-68e9-7119-b340-3f00a48ee8b8"]
 = MetaData.Schema.D20.A2 "UsrLibraryOrdersEvents"
 = MetaData.Schema.D36.A3 "5b9a4105-2a79-4f77-8855-a46b4e33afe7"
 = MetaData.Schema.D36.BS1 false

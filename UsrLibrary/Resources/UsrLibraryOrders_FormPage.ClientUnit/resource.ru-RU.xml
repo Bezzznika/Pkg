@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Страница записи Library orders" />
+			<Item Name="LocalizableStrings.DateTimePicker_16fgsjo_placeholder.Value" Value="(макс 7 дней)" />
 		</Items>
 	</Group>
 </Resources>

@@ -4,6 +4,7 @@
     "Name": "UsrProcess_18c8fcb",
     "ModifiedOnUtc": "\/Date(1718888339000)\/",
     "ManagerName": "ProcessSchemaManager",
-    "Caption": "Random Number Generator"
+    "Caption": "Business process 1",
+    "DependsOn": []
   }
 }
