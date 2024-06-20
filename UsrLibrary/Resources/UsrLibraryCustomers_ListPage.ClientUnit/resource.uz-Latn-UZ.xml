@@ -3,6 +3,8 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Library Customers list page" />
+			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Search by USID, name or number" />
+			<Item Name="LocalizableStrings.SearchFilter_t4gdinh_placeholder.Value" Value="Search" />
 		</Items>
 	</Group>
 </Resources>

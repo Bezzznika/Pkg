@@ -3,6 +3,14 @@ define("UsrPage_xnwauke", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
 				"operation": "merge",
+				"name": "SaveButton",
+				"values": {
+					"size": "large",
+					"iconPosition": "only-text"
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "Tabs",
 				"values": {
 					"styleType": "default",
@@ -163,6 +171,30 @@ define("UsrPage_xnwauke", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_
 			},
 			{
 				"operation": "insert",
+				"name": "Input_46v9op3",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 8,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"multiline": false,
+					"label": "$Resources.Strings.StringAttribute_zsouk6c",
+					"labelPosition": "auto",
+					"control": "$StringAttribute_zsouk6c",
+					"visible": true,
+					"readonly": true,
+					"placeholder": "",
+					"tooltip": ""
+				},
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 7
+			},
+			{
+				"operation": "insert",
 				"name": "NumberInput_o2llxvw",
 				"values": {
 					"layoutConfig": {
@@ -268,6 +300,11 @@ define("UsrPage_xnwauke", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_
 					"NumberAttribute_rjwj555": {
 						"modelConfig": {
 							"path": "UsrUserDS.UsrFines"
+						}
+					},
+					"StringAttribute_zsouk6c": {
+						"modelConfig": {
+							"path": "UsrUserDS.Name"
 						}
 					}
 				}

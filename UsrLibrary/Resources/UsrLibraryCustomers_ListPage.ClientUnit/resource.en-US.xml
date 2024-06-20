@@ -8,6 +8,7 @@
 			<Item Name="LocalizableStrings.LookupQuickFilterByTag_config_hint.Value" Value="Select tag to filter" />
 			<Item Name="LocalizableStrings.RefreshButtonCaption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.SearchFilter_t4gdinh_placeholder.Value" Value="Search" />
 		</Items>
 	</Group>
 </Resources>

@@ -3,7 +3,8 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Library orders" />
-			<Item Name="Columns.UsrName.Caption" Value="Name" />
+			<Item Name="Columns.UsrClient.Caption" Value="Client" />
+			<Item Name="Columns.UsrCopyID.Caption" Value="BID" />
 		</Items>
 	</Group>
 </Resources>

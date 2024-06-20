@@ -249,7 +249,7 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					"sourceSchemaName": "FolderTree",
 					"rootSchemaName": "UsrLibrary",
 					"layoutConfig": {
-						"width": 328.125
+						"width": 218.12503051757812
 					},
 					"classes": [
 						"section-folder-tree"
@@ -278,28 +278,32 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"code": "DataGrid_ljqujxsDS_UsrBookTitle",
 							"path": "UsrBookTitle",
 							"caption": "#ResourceString(DataGrid_ljqujxsDS_UsrBookTitle)#",
-							"dataValueType": 28
+							"dataValueType": 28,
+							"width": 114
 						},
 						{
 							"id": "fe61f06f-2a4f-3de5-58a1-5a5bf33477d0",
 							"code": "DataGrid_ljqujxsDS_UsrBookQuantity",
 							"path": "UsrBookQuantity",
 							"caption": "#ResourceString(DataGrid_ljqujxsDS_UsrBookQuantity)#",
-							"dataValueType": 4
+							"dataValueType": 4,
+							"width": 114
 						},
 						{
 							"id": "e7d0a865-0a3a-8cfa-2204-478e3db90be6",
 							"code": "DataGrid_ljqujxsDS_UsrBookPublicationDate",
 							"path": "UsrBookPublicationDate",
 							"caption": "#ResourceString(DataGrid_ljqujxsDS_UsrBookPublicationDate)#",
-							"dataValueType": 8
+							"dataValueType": 8,
+							"width": 114
 						},
 						{
 							"id": "ef880ec3-6182-ee91-dbae-1da2bba8fb2a",
 							"code": "DataGrid_ljqujxsDS_UsrBookLocation",
 							"path": "UsrBookLocation",
 							"caption": "#ResourceString(DataGrid_ljqujxsDS_UsrBookLocation)#",
-							"dataValueType": 28
+							"dataValueType": 28,
+							"width": 114.00001525878906
 						},
 						{
 							"id": "9c469461-f92c-1627-e46b-347413172c58",
@@ -307,7 +311,8 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"path": "UsrBookGenre",
 							"caption": "#ResourceString(DataGrid_ljqujxsDS_UsrBookGenre)#",
 							"dataValueType": 10,
-							"referenceSchemaName": "UsrGenre"
+							"referenceSchemaName": "UsrGenre",
+							"width": 132.00001525878906
 						},
 						{
 							"id": "5f5bcc20-ce1f-9460-59a9-135a9c575894",
@@ -315,14 +320,16 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"path": "UsrBookFormat",
 							"caption": "#ResourceString(DataGrid_ljqujxsDS_UsrBookFormat)#",
 							"dataValueType": 10,
-							"referenceSchemaName": "UsrFormat"
+							"referenceSchemaName": "UsrFormat",
+							"width": 143.00001525878906
 						},
 						{
 							"id": "e88c119e-cfca-1a03-ae4f-ccc2789f3a03",
 							"code": "DataGrid_ljqujxsDS_UsrBookAvailableCopies",
 							"path": "UsrBookAvailableCopies",
 							"caption": "#ResourceString(DataGrid_ljqujxsDS_UsrBookAvailableCopies)#",
-							"dataValueType": 4
+							"dataValueType": 4,
+							"width": 114
 						},
 						{
 							"id": "979b8ea3-2805-856b-a8f6-be9295f76c42",
@@ -330,7 +337,15 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"path": "UsrBookAuthor",
 							"caption": "#ResourceString(DataGrid_ljqujxsDS_UsrBookAuthor)#",
 							"dataValueType": 10,
-							"referenceSchemaName": "UsrAuthor"
+							"referenceSchemaName": "UsrAuthor",
+							"width": 164.00001525878906
+						},
+						{
+							"id": "76bfb86e-20dd-c25b-ced9-633666b6f20a",
+							"code": "DataGrid_ljqujxsDS_Name",
+							"path": "Name",
+							"caption": "#ResourceString(DataGrid_ljqujxsDS_Name)#",
+							"dataValueType": 28
 						}
 					],
 					"items": "$DataGrid_ljqujxs",
@@ -452,7 +467,15 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					"DataGrid_ljqujxs": {
 						"isCollection": true,
 						"modelConfig": {
-							"path": "DataGrid_ljqujxsDS"
+							"path": "DataGrid_ljqujxsDS",
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "asc",
+										"columnName": "UsrBookAuthor"
+									}
+								]
+							}
 						},
 						"viewModelConfig": {
 							"attributes": {
@@ -494,6 +517,11 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 								"DataGrid_ljqujxsDS_UsrBookAuthor": {
 									"modelConfig": {
 										"path": "DataGrid_ljqujxsDS.UsrBookAuthor"
+									}
+								},
+								"DataGrid_ljqujxsDS_Name": {
+									"modelConfig": {
+										"path": "DataGrid_ljqujxsDS.Name"
 									}
 								},
 								"DataGrid_ljqujxsDS_Id": {
@@ -641,11 +669,22 @@ define("UsrLibrary_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 									},
 									"UsrBookAuthor": {
 										"path": "UsrBookAuthor"
+									},
+									"Name": {
+										"path": "Name"
 									}
 								}
 							}
+						},
+						"UsrBookDS": {
+							"type": "crt.EntityDataSource",
+							"scope": "page",
+							"config": {
+								"entitySchemaName": "UsrBook"
+							}
 						}
-					}
+					},
+					"primaryDataSourceName": "UsrBookDS"
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,

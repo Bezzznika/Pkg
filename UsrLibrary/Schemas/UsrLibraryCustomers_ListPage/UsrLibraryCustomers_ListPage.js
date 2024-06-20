@@ -40,90 +40,83 @@ define("UsrLibraryCustomers_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 				"values": {
 					"columns": [
 						{
-							"id": "06d8613e-4b92-74e3-7b4d-378009c5ac53",
+							"id": "c0bc254a-35c2-2361-cddc-7b6dd97c9231",
 							"code": "PDS_UsrName",
 							"path": "UsrName",
 							"caption": "#ResourceString(PDS_UsrName)#",
 							"dataValueType": 27,
-							"width": 207.00001525878906
+							"width": 199.00001525878906
 						},
 						{
-							"id": "8bdb1921-56b5-360c-0547-6bfdf4de49ad",
+							"id": "fe5c55b2-5df7-12ce-3b8b-1b288c072289",
 							"code": "PDS_UsrMemberTypeId",
 							"path": "UsrMemberTypeId",
 							"caption": "#ResourceString(PDS_UsrMemberTypeId)#",
 							"dataValueType": 10,
-							"referenceSchemaName": "UsrMemberType"
+							"referenceSchemaName": "UsrMemberType",
+							"width": 181.00001525878906
 						},
 						{
-							"id": "0847d2df-c5dc-2068-72ee-4714e53d75a3",
+							"id": "745fcd83-d35a-194a-23d5-63bb93afd152",
 							"code": "PDS_UsrAddress",
+							"path": "UsrAddress",
 							"caption": "#ResourceString(PDS_UsrAddress)#",
 							"dataValueType": 28,
-							"width": 125.99305725097656
+							"width": 150.00001525878906
 						},
 						{
-							"id": "90b17ea3-2b10-632e-d17b-307974380c3c",
-							"code": "PDS_UsrFines",
-							"path": "UsrFines",
-							"caption": "#ResourceString(PDS_UsrFines)#",
-							"dataValueType": 32
-						},
-						{
-							"id": "346b8a5a-c00e-9195-b776-e46c401d045d",
+							"id": "cd0769e7-bce0-4c2e-c3c4-c4f3f9510c60",
 							"code": "PDS_UsrEmail",
 							"path": "UsrEmail",
 							"caption": "#ResourceString(PDS_UsrEmail)#",
 							"dataValueType": 45,
-							"width": 131.00001525878906
+							"width": 133.00001525878906
 						},
 						{
-							"id": "703845de-b4a3-31b0-2218-5b0f7a5f7647",
+							"id": "ea231c9d-56cb-e4d6-d6e5-01a758792376",
 							"code": "PDS_UsrContactNumber",
 							"path": "UsrContactNumber",
 							"caption": "#ResourceString(PDS_UsrContactNumber)#",
 							"dataValueType": 42,
-							"width": 167.00001525878906
+							"width": 206.00001525878906
 						},
 						{
-							"id": "920e722c-6627-7b61-182a-0348ee3eb589",
-							"code": "PDS_UsrCanceledOrders",
-							"path": "UsrCanceledOrders",
-							"caption": "#ResourceString(PDS_UsrCanceledOrders)#",
-							"dataValueType": 4
-						},
-						{
-							"id": "fbc87adc-451b-0199-e1ec-3eba0fab38f7",
-							"code": "PDS_UsrAddress",
-							"path": "UsrAddress",
-							"caption": "#ResourceString(PDS_UsrAddress)#",
-							"dataValueType": 28
-						},
-						{
-							"id": "8791f43d-3c7e-f3b6-c94f-179a6c8dfa05",
+							"id": "59ed8864-6dc7-9fad-5240-d0dc50abfb7e",
 							"code": "PDS_UsrActiveOrders",
 							"path": "UsrActiveOrders",
 							"caption": "#ResourceString(PDS_UsrActiveOrders)#",
 							"dataValueType": 4
 						},
 						{
-							"id": "f6490fb0-40c2-1521-316e-ad32c210ce85",
-							"code": "PDS_CreatedOn",
-							"path": "CreatedOn",
-							"caption": "#ResourceString(PDS_CreatedOn)#",
-							"dataValueType": 7
+							"id": "14c17e10-a1c8-7652-924e-28e8393b0437",
+							"code": "PDS_UsrCanceledOrders",
+							"path": "UsrCanceledOrders",
+							"caption": "#ResourceString(PDS_UsrCanceledOrders)#",
+							"dataValueType": 4
 						},
 						{
-							"id": "bce66552-3559-1a43-2534-733f5b06e203",
-							"code": "PDS_UsrBirthDate",
-							"path": "UsrBirthDate",
-							"caption": "#ResourceString(PDS_UsrBirthDate)#",
-							"dataValueType": 8
+							"id": "9bb78c84-4012-b85a-9ff1-34b77ae5d9e8",
+							"code": "PDS_Name",
+							"path": "Name",
+							"caption": "#ResourceString(PDS_Name)#",
+							"dataValueType": 28
 						}
 					],
 					"layoutConfig": {
 						"basis": "100%",
 						"width": 300
+					},
+					"features": {
+						"rows": {
+							"selection": {
+								"enable": true,
+								"multiple": true
+							}
+						},
+						"editable": {
+							"enable": false,
+							"itemsCreation": false
+						}
 					},
 					"primaryColumnName": "PDS_Id",
 					"sorting": "$ItemsSorting | crt.ToDataTableSortingConfig: 'Items'",
@@ -329,7 +322,7 @@ define("UsrLibraryCustomers_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 					"sourceSchemaName": "FolderTree",
 					"rootSchemaName": "UsrLibraryCustomers",
 					"layoutConfig": {
-						"width": 328.125
+						"width": 235.12503051757812
 					},
 					"classes": [
 						"section-folder-tree"
@@ -473,7 +466,7 @@ define("UsrLibraryCustomers_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 							"default": [
 								{
 									"direction": "asc",
-									"columnName": "UsrName"
+									"columnName": "UsrContactNumber"
 								}
 							]
 						},
@@ -518,11 +511,6 @@ define("UsrLibraryCustomers_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 							"path": "PDS.UsrAddress"
 						}
 					},
-					"PDS_UsrFines": {
-						"modelConfig": {
-							"path": "PDS.UsrFines"
-						}
-					},
 					"PDS_UsrEmail": {
 						"modelConfig": {
 							"path": "PDS.UsrEmail"
@@ -533,24 +521,19 @@ define("UsrLibraryCustomers_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 							"path": "PDS.UsrContactNumber"
 						}
 					},
-					"PDS_UsrCanceledOrders": {
-						"modelConfig": {
-							"path": "PDS.UsrCanceledOrders"
-						}
-					},
 					"PDS_UsrActiveOrders": {
 						"modelConfig": {
 							"path": "PDS.UsrActiveOrders"
 						}
 					},
-					"PDS_CreatedOn": {
+					"PDS_UsrCanceledOrders": {
 						"modelConfig": {
-							"path": "PDS.CreatedOn"
+							"path": "PDS.UsrCanceledOrders"
 						}
 					},
-					"PDS_UsrBirthDate": {
+					"PDS_Name": {
 						"modelConfig": {
-							"path": "PDS.UsrBirthDate"
+							"path": "PDS.Name"
 						}
 					},
 					"PDS_Id": {
@@ -582,26 +565,20 @@ define("UsrLibraryCustomers_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, funct
 									"UsrAddress": {
 										"path": "UsrAddress"
 									},
-									"UsrFines": {
-										"path": "UsrFines"
-									},
 									"UsrEmail": {
 										"path": "UsrEmail"
 									},
 									"UsrContactNumber": {
 										"path": "UsrContactNumber"
 									},
-									"UsrCanceledOrders": {
-										"path": "UsrCanceledOrders"
-									},
 									"UsrActiveOrders": {
 										"path": "UsrActiveOrders"
 									},
-									"CreatedOn": {
-										"path": "CreatedOn"
+									"UsrCanceledOrders": {
+										"path": "UsrCanceledOrders"
 									},
-									"UsrBirthDate": {
-										"path": "UsrBirthDate"
+									"Name": {
+										"path": "Name"
 									}
 								}
 							},

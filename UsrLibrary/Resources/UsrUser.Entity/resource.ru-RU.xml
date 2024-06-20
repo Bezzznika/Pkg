@@ -3,6 +3,10 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Объект" />
+			<Item Name="Columns.UsrActiveOrders.Caption" Value="Активные заказы пользователей" />
+			<Item Name="Columns.UsrAddress.Caption" Value="Адрес пользователя" />
+			<Item Name="Columns.UsrBirthDate.Caption" Value="Дата рождения" />
+			<Item Name="Columns.UsrCanceledOrders.Caption" Value="Отмененные заказы" />
 		</Items>
 	</Group>
 </Resources>

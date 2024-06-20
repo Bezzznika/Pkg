@@ -3,7 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Object" />
-			<Item Name="Columns.CreatedOn.Caption" Value="Registration Date" />
+			<Item Name="Columns.Name.Caption" Value="USID" />
 			<Item Name="Columns.UsrActiveOrders.Caption" Value="User Active Address" />
 			<Item Name="Columns.UsrAddress.Caption" Value="User Address" />
 			<Item Name="Columns.UsrBirthDate.Caption" Value="Birth Date" />

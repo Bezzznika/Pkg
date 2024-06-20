@@ -2,39 +2,43 @@ define("UsrLibraryOrders_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
-				"operation": "insert",
-				"name": "UsrName",
+				"operation": "merge",
+				"name": "Tabs",
 				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"row": 1,
-						"colSpan": 1,
-						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.UsrName",
-					"control": "$UsrName",
-					"labelPosition": "auto"
-				},
-				"parentName": "SideAreaProfileContainer",
-				"propertyName": "items",
-				"index": 0
+					"styleType": "default",
+					"mode": "tab",
+					"bodyBackgroundColor": "primary-contrast-500",
+					"selectedTabTitleColor": "auto",
+					"tabTitleColor": "auto",
+					"underlineSelectedTabColor": "auto",
+					"headerBackgroundColor": "auto"
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "GeneralInfoTab",
+				"values": {
+					"iconPosition": "left-icon",
+					"visible": true,
+					"icon": "default-tab-icon"
+				}
+			},
+			{
+				"operation": "remove",
+				"name": "GeneralInfoTabContainer"
+			},
+			{
+				"operation": "merge",
+				"name": "Feed",
+				"values": {
+					"dataSourceName": "PDS",
+					"entitySchemaName": "UsrLibraryOrders"
+				}
 			},
 			{
 				"operation": "merge",
 				"name": "AttachmentList",
 				"values": {
-					"type": "crt.FileList",
-					"masterRecordColumnValue": "$Id",
-					"recordColumnName": "RecordId",
-					"layoutConfig": {
-						"colSpan": 2,
-						"column": 1,
-						"row": 1,
-						"rowSpan": 6
-					},
-					"items": "$AttachmentList",
-					"primaryColumnName": "AttachmentListDS_Id",
 					"columns": [
 						{
 							"id": "281312aa-6f95-4fcd-b656-8851e87f957f",
@@ -43,68 +47,160 @@ define("UsrLibraryOrders_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							"dataValueType": 28,
 							"width": 200
 						}
-					],
-					"viewType": "gallery",
-					"tileSize": "small"
+					]
+				}
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_ioljf13",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 1,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.LookupAttribute_fh5hwiu",
+					"labelPosition": "auto",
+					"control": "$LookupAttribute_fh5hwiu",
+					"listActions": [],
+					"showValueAsLink": true,
+					"controlActions": [],
+					"visible": true,
+					"placeholder": "",
+					"tooltip": ""
 				},
-				"parentName": "AttachmentsTabContainer",
+				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
 				"index": 0
 			},
 			{
-				"operation": "merge",
-				"name": "Feed",
+				"operation": "insert",
+				"name": "ComboBox_4goyf74",
 				"values": {
-					"type": "crt.Feed",
-					"feedType": "Record",
-					"primaryColumnValue": "$Id",
-					"cardState": "$CardState",
-					"dataSourceName": "PDS",
-					"entitySchemaName": "UsrLibraryOrders"
+					"layoutConfig": {
+						"column": 1,
+						"row": 2,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.LookupAttribute_54i2oib",
+					"labelPosition": "auto",
+					"control": "$LookupAttribute_54i2oib",
+					"listActions": [],
+					"showValueAsLink": true,
+					"controlActions": [],
+					"visible": true,
+					"placeholder": "",
+					"tooltip": ""
 				},
-				"parentName": "FeedTabContainer",
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "TabContainer_wv21ama",
+				"values": {
+					"type": "crt.TabContainer",
+					"items": [],
+					"caption": "#ResourceString(TabContainer_wv21ama_caption)#",
+					"iconPosition": "left-icon",
+					"visible": true,
+					"icon": "empty-document-tab-icon"
+				},
+				"parentName": "Tabs",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_ezazhg1",
+				"values": {
+					"type": "crt.GridContainer",
+					"items": [],
+					"rows": "minmax(32px, max-content)",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					}
+				},
+				"parentName": "TabContainer_wv21ama",
 				"propertyName": "items",
 				"index": 0
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
-		viewModelConfig: /**SCHEMA_VIEW_MODEL_CONFIG*/{
-			"attributes": {
-				"UsrName": {
-					"modelConfig": {
-						"path": "PDS.UsrName"
-					}
-				},
-				"Id": {
-					"modelConfig": {
-						"path": "PDS.Id"
-					}
-				}
-			}
-		}/**SCHEMA_VIEW_MODEL_CONFIG*/,
-		modelConfig: /**SCHEMA_MODEL_CONFIG*/{
-			"dataSources": {
-				"PDS": {
-					"type": "crt.EntityDataSource",
-					"config": {
-						"entitySchemaName": "UsrLibraryOrders"
+		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
+			{
+				"operation": "merge",
+				"path": [
+					"attributes"
+				],
+				"values": {
+					"UsrName": {
+						"modelConfig": {
+							"path": "PDS.UsrName"
+						}
 					},
-					"scope": "page"
-				},
-				"AttachmentListDS": {
-					"type": "crt.EntityDataSource",
-					"scope": "viewElement",
-					"config": {
-						"entitySchemaName": "SysFile",
-						"attributes": {
-							"Name": {
-								"path": "Name"
-							}
+					"LookupAttribute_fh5hwiu": {
+						"modelConfig": {
+							"path": "PDS.UsrClient"
+						}
+					},
+					"LookupAttribute_54i2oib": {
+						"modelConfig": {
+							"path": "PDS.UsrCopyID"
+						}
+					},
+					"StringAttribute_yauhfg6": {
+						"modelConfig": {
+							"path": "PageParameters.UsrTextParameter1"
 						}
 					}
 				}
 			},
-			"primaryDataSourceName": "PDS"
-		}/**SCHEMA_MODEL_CONFIG*/,
+			{
+				"operation": "merge",
+				"path": [
+					"attributes",
+					"Id",
+					"modelConfig"
+				],
+				"values": {
+					"path": "PDS.Id"
+				}
+			}
+		]/**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/,
+		modelConfigDiff: /**SCHEMA_MODEL_CONFIG_DIFF*/[
+			{
+				"operation": "merge",
+				"path": [],
+				"values": {
+					"primaryDataSourceName": "PDS"
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"dataSources"
+				],
+				"values": {
+					"PDS": {
+						"type": "crt.EntityDataSource",
+						"config": {
+							"entitySchemaName": "UsrLibraryOrders"
+						},
+						"scope": "page"
+					}
+				}
+			}
+		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
 		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/

@@ -109,6 +109,7 @@
 		</When>
 	</Choose>
 	<ItemGroup Label="Core References">
+		<Reference Include="System.Net.Http" />
 		<Reference Include="Terrasoft.Common">
 			<HintPath>$(CoreLibPath)/Terrasoft.Common.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>

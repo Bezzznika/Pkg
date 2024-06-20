@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="uz-Latn-UZ">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Library orders" />
+			<Item Name="Columns.UsrClient.Caption" Value="USID" />
+			<Item Name="Columns.UsrCopyID.Caption" Value="BID" />
+		</Items>
+	</Group>
+</Resources>

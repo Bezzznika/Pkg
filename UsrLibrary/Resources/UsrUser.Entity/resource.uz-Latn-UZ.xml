@@ -3,8 +3,8 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Library User" />
-			<Item Name="Columns.CreatedOn.Caption" Value="Registration Date" />
-			<Item Name="Columns.UsrActiveOrders.Caption" Value="User Active Address" />
+			<Item Name="Columns.Name.Caption" Value="USID" />
+			<Item Name="Columns.UsrActiveOrders.Caption" Value="User Active Orders" />
 			<Item Name="Columns.UsrAddress.Caption" Value="User Address" />
 			<Item Name="Columns.UsrBirthDate.Caption" Value="Birth Date" />
 			<Item Name="Columns.UsrCanceledOrders.Caption" Value="User Canceled Orders" />

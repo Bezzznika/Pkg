@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="uz-Latn-UZ">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Library orders form page" />
+			<Item Name="LocalizableStrings.addRecord_gdngeka_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_kcugr79_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.GeneralInfoTab_caption.Value" Value="Information about user" />
+			<Item Name="LocalizableStrings.TabContainer_wv21ama_caption.Value" Value="Information about the book" />
+		</Items>
+	</Group>
+</Resources>

@@ -3,7 +3,6 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Library orders" />
-			<Item Name="Columns.UsrName.Caption" Value="Název" />
 		</Items>
 	</Group>
 </Resources>
