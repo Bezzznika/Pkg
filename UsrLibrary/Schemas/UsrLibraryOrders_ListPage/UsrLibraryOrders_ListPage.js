@@ -126,6 +126,31 @@ define("UsrLibraryOrders_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 			},
 			{
 				"operation": "insert",
+				"name": "Button_d29yb6v",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_d29yb6v_caption)#",
+					"color": "default",
+					"disabled": false,
+					"size": "large",
+					"iconPosition": "left-icon",
+					"visible": true,
+					"icon": "webhooks-integration-button-icon",
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "UsrProcess_18c8fcb",
+							"processRunType": "RegardlessOfThePage"
+						}
+					},
+					"clickMode": "default"
+				},
+				"parentName": "ActionButtonsContainer",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "MainFilterContainer",
 				"values": {
 					"type": "crt.GridContainer",

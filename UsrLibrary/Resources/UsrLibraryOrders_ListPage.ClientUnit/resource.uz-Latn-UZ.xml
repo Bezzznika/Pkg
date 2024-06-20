@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Library orders list page" />
+			<Item Name="LocalizableStrings.Button_d29yb6v_caption.Value" Value="Mystery Button" />
 		</Items>
 	</Group>
 </Resources>

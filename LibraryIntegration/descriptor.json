@@ -1,9 +1,9 @@
 ﻿{
   "Descriptor": {
-    "UId": "cff8deda-45e0-aa4a-e77f-414ee1f189c3",
+    "UId": "c69ee474-03a5-d2c4-65c4-48ca5291720f",
     "Name": "LibraryIntegration",
     "Type": 1,
-    "ModifiedOnUtc": "\/Date(1718774435000)\/",
+    "ModifiedOnUtc": "\/Date(1718884793000)\/",
     "Maintainer": "Customer",
     "ProjectPath": "Files/LibraryIntegration.csproj",
     "DependsOn": []
