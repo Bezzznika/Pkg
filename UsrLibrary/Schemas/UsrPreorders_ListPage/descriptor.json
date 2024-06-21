@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "c3536034-7007-440c-b41d-b6abfa9a24f1",
+    "Name": "UsrPreorders_ListPage",
+    "ModifiedOnUtc": "\/Date(1718952759000)\/",
+    "Parent": {
+      "UId": "3f1f3f38-a0a4-4549-b895-249fb08f554a",
+      "Name": "ListFreedomTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Preorders list page"
+  }
+}

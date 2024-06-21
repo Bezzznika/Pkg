@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "1bb9781c-c5a8-4c48-9f00-4043bc80bbef",
+    "Name": "UsrPreorders_FormPage",
+    "ModifiedOnUtc": "\/Date(1718952753000)\/",
+    "Parent": {
+      "UId": "3b2e117f-8c6b-4ca5-80a2-7ebb497cddf9",
+      "Name": "PageWithTabsFreedomTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "UsrPreorders_FormPage"
+  }
+}

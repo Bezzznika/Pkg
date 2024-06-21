@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "ff9570b7-5fa5-4c9a-b59b-d90a64ee1e26",
+    "Name": "UsrPreordersRelatedPage",
+    "ModifiedOnUtc": "\/Date(1718949464000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Preorders (Page settings)",
+    "DependsOn": []
+  }
+}
